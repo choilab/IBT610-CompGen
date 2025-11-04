@@ -40,7 +40,7 @@ mlst --legacy --scheme sepidermidis --nopath Rep_genomes/*.fna > mlst_results.ts
 
 ## 3. Reviewing and Interpreting Results
 
-This analysis is much faster than AAI/ANI. Check the top of the output file using `head`.
+Check the top of the output file using `head`.
 
 ```bash
 head mlst_results.tsv
