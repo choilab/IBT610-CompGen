@@ -23,7 +23,7 @@ After activating the environment, navigate to the project directory containing y
 
 ```bash
 # Example: cd /mnt/c/Compgen_project
-# Or: cd /mnt/c/Users/minion/Documents/Xiaoyue/Desktop/khnam_genomics/output_drep_results
+# Or: cd /mnt/c/Users/khnam_genomics/output_drep_results
 ```
 
 From this location, execute the `mlst` command. This will analyze all genomes and save the results to `mlst_results.tsv`.
