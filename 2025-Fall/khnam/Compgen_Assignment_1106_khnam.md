@@ -45,6 +45,7 @@ This analysis is much faster than AAI/ANI. Check the top of the output file usin
 ```bash
 head mlst_results.tsv
 ```
+Convert file name **mlst_results.tsv** to **Sepi_MLST.tsv**
 
 ### Output File Structure (`Sepi_MLST.tsv`)
 
