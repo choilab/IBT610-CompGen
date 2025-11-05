@@ -45,7 +45,7 @@ Check the top of the output file using `head`.
 ```bash
 head mlst_results.tsv
 ```
-Convert file name **mlst_results.tsv** to **Sepi_MLST.tsv**
+Rename **mlst_results.tsv** to **Sepi_MLST.tsv** (File name)
 
 ### Output File Structure (`Sepi_MLST.tsv`)
 
