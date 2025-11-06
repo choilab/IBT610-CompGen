@@ -90,8 +90,7 @@ MLST에 사용된 *housekeeping gene* 11개 : clpX, dnaA, dnaK, groEL, murC, mur
 2. 동일 서열에 같은 **allele 번호** 부여  
 3. 유전자 조합에 따라 고유한 **Sequence Type (ST)** 정의  
 4. 최종적으로 GenomeID × 11개 유전자 매트릭스 생성 및 CSV 저장
-> 파일: https://github.com/igchoi/IBT610-CompGen/blob/f56bc1ded0e8be043db7f78669eda461fbec2342/2025-Fall/mjbaek/ncbi_metadata_155genomes_final.csv
-
+> 파일: https://github.com/igchoi/IBT610-CompGen/blob/a39f93c2de325c4220dec52770bd688e9e527986/2025-Fall/mjbaek/analysis_result.csv
 
 ### 💾 결과 요약
 - 총 추출된 유전자 서열: **426개**  
