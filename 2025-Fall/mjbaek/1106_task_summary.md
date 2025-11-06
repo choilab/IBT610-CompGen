@@ -40,7 +40,7 @@
 ### 4️⃣ Low-ANI 유전체 탐지
 - **AP017974.1** 유전체가 낮은 ANI 쌍에서 **308회 이상 반복 등장**,  
   이는 특이적 변이 혹은 계통적으로 다른 분리주임을 시사. 다른 유전체들도 2회 정도 low-ANI 쌍에서 나타났는데, 이는 해당 id와 비교할 때 낮은 값을 가지게 된 것이기에 AP017974.1가 문제가 됨.
-> 파일:
+> 파일:https://github.com/igchoi/IBT610-CompGen/blob/c7f2158e09483995fcbe89c653a3632d4fc43d5f/2025-Fall/mjbaek/low_ani_outlier_pairs.csv
 ---
 
 ## 3. 메타데이터 요약 (Metadata Summary)
