@@ -113,14 +113,13 @@ conda activate comparem_env
 
 ### 2. Running the CompareM AAI Workflow
 
-This analysis was computationally intensive and run on a desktop machine.
 
 **2-1. Navigate to the project directory:**
 The directory must contain the folder with the 124 genome files (e.g., `dereplicated_genomes/`).
 
 ```bash
 # Path on the analysis machine (WSL)
-cd /mnt/c/Users/khnam/Desktop/khnam_genomics/output_drep_results
+cd /mnt/c/Users/khnam/khnam_genomics/output_drep_resultsj
 ```
 
 **2-2. Create a temporary directory:**
