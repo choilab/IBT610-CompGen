@@ -55,7 +55,7 @@
 | **고유 BioSample ID 수** | 81개 (중복 제거 후) |
 
 > ⚠️ 중복된 BioSampleAccession은 동일 시료가 여러 프로젝트나 시점에서 재등록되었음을 의미합니다.
-> 파일: 
+> 파일: https://github.com/igchoi/IBT610-CompGen/blob/e72b45430ba6900e04f5af59094fcd7c1de298dd/2025-Fall/mjbaek/biosample_metadata_155.csv
 ---
 
 ## 5. MLST (Multilocus Sequence Typing) 분석
