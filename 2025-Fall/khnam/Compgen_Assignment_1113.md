@@ -15,6 +15,7 @@ cd /mnt/c/Compgen_project/Roary_results_1762490311
     
 # Print the contents of the summary statistics file
 cat summary_statistics.txt
+```
 
 | Category | Gene Count |
 | :--- | :--- |
