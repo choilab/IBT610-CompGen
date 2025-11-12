@@ -49,10 +49,10 @@
 |------|------|
 | **종(Species)** | 모두 *Limosilactobacillus fermentum* |
 | **Assembly Level** | 모두 Complete Genome 수준 |
-| **Assembly Name** | 총 81개의 고유한 어셈블리 이름(총 155개 중 MLST를 분석할 수 있는 ACCESSION number를 가진것은 81개였음) |
+| **Assembly Name** | 총 82개의 고유한 어셈블리 이름(총 155개 중 MLST를 분석할 수 있는 ACCESSION number를 가진것은 81개였음) |
 | **BioSample / BioProject** | 다수 결측 (빈값 많음) |
 | **Release Date** | 대부분 미기재 |
-| **고유 BioSample ID 수** | 81개 (중복 제거 후) |
+| **고유 BioSample ID 수** | 82개 (중복 제거 후) |
 
 > ⚠️ 중복된 BioSampleAccession은 동일 시료가 여러 프로젝트나 시점에서 재등록되었음을 의미합니다.
 > 파일: https://github.com/igchoi/IBT610-CompGen/blob/e72b45430ba6900e04f5af59094fcd7c1de298dd/2025-Fall/mjbaek/biosample_metadata_155.csv
