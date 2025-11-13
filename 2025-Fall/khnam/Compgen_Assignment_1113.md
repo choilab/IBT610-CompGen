@@ -36,7 +36,7 @@ cat summary_statistics.txt
 
 ## 3. Gene-Profile-Based Clustering
 
-* **Contents:** This is a **phylogenetic tree (dendrogram)** that groups **'genomes with similar gene compositions'** together, based on the `gene_presence_absence.csv` data.
+* **Contents:** This is a **phylogenetic tree (dendrogram)** that groups **'genomes with similar gene compositions'** together, based on the.
 * **Principle:** Genomes that share a more similar set of the 8,492 accessory genes (the O/X list) are clustered onto closer branches in this tree.
 
 <img width="1920" height="912" alt="image" src="https://github.com/user-attachments/assets/ab00dcd2-c0da-4606-bbd3-10ed721b8a2f" />
