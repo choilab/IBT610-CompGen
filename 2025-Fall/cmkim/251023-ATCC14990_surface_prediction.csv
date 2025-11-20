@@ -1,0 +1,901 @@
+gene_name,prediction,product
+WP_000048060.1,GPApred,30S ribosomal protein S21
+WP_000240855.1,GPApred+DeepLocPro,50S ribosomal protein L34
+WP_000261373.1,GPApred,hypothetical protein
+WP_000644737.1,GPApred,50S ribosomal protein L29
+WP_001048816.1,GPApred,F0F1 ATP synthase subunit C
+WP_001631028.1,GPApred,restriction endonuclease subunit R
+WP_001829258.1,GPApred+SignalP,transposase
+WP_001829320.1,GPApred,YjzD family protein
+WP_001829335.1,GPApred,S1C family serine protease
+WP_001829339.1,GPApred,YkvS family protein
+WP_001829342.1,GPApred,hypothetical protein
+WP_001829359.1,GPApred+SignalP,DUF4352 domain-containing protein
+WP_001829365.1,all,hypothetical protein
+WP_001829425.1,all,YSIRK domain-containing triacylglycerol lipase GehC
+WP_001829449.1,GPApred+SignalP,hypothetical protein
+WP_001829458.1,GPApred,membrane protein
+WP_001829569.1,GPApred,type II toxin-antitoxin system toxin TsaT
+WP_001829571.1,GPApred+SignalP,ferrated catecholamine ABC transporter substrate-binding lipoprotein SstD
+WP_001829614.1,GPApred,hypothetical protein
+WP_001829621.1,all,COG3942 and LysM peptidoglycan-binding domain-containing protein
+WP_001829642.1,GPApred+SignalP,VraH family peptide resistance protein
+WP_001829669.1,GPApred,preprotein translocase subunit SecG
+WP_001829680.1,GPApred+SignalP,diacylglycerol/lipid kinase family protein
+WP_001829687.1,GPApred+SignalP,hypothetical protein
+WP_001829709.1,all,50S ribosomal protein L36
+WP_001829711.1,GPApred,50S ribosomal protein L30
+WP_001829713.1,GPApred+DeepLocPro,type Z 30S ribosomal protein S14
+WP_001829860.1,all,trypsin-like serine peptidase
+WP_001829904.1,all,transglycosylase family protein
+WP_001829931.1,all,type II toxin-antitoxin system antitoxin MazE
+WP_001829949.1,GPApred,Lmo0850 family protein
+WP_001829956.1,GPApred,hypothetical protein
+WP_001830021.1,all,cyclic lactone autoinducer peptide AgrD
+WP_001830049.1,GPApred+SignalP,hypothetical protein
+WP_001830056.1,GPApred,hypothetical protein
+WP_001830061.1,GPApred+DeepLocPro,hypothetical protein
+WP_001830076.1,all,beta-class phenol-soluble modulin
+WP_001830095.1,all,beta-class phenol-soluble modulin
+WP_001830107.1,GPApred+DeepLocPro,50S ribosomal protein L28
+WP_001830121.1,GPApred+SignalP,50S ribosomal protein L32
+WP_001830190.1,all,beta-class phenol-soluble modulin
+WP_001830329.1,GPApred+SignalP,DM13 domain-containing protein
+WP_001830353.1,GPApred,hypothetical protein
+WP_001830380.1,GPApred,NETI motif-containing protein
+WP_001830395.1,GPApred,SE1561 family protein
+WP_001830442.1,GPApred+SignalP,CamS family sex pheromone protein
+WP_001830525.1,GPApred,YdhK family protein
+WP_001830645.1,GPApred+SignalP,transposase
+WP_001830655.1,GPApred+SignalP,hypothetical protein
+WP_001830659.1,all,hypothetical protein
+WP_001830672.1,all,poly-gamma-glutamate hydrolase family protein
+WP_001830746.1,GPApred+SignalP,SAS049 family protein
+WP_001830753.1,GPApred,hypothetical protein
+WP_001830756.1,GPApred,hypothetical protein
+WP_001830767.1,GPApred+DeepLocPro,50S ribosomal protein L35
+WP_001830935.1,GPApred,exodeoxyribonuclease VII small subunit
+WP_001830957.1,GPApred+SignalP,50S ribosomal protein L33
+WP_001830963.1,GPApred+SignalP,type 1 glutamine amidotransferase domain-containing protein
+WP_001831007.1,GPApred,molecular chaperone DnaK
+WP_001831026.1,GPApred,zinc-finger domain-containing protein
+WP_001831076.1,GPApred,SA1362 family protein
+WP_001831077.1,GPApred,hypothetical protein
+WP_001831117.1,GPApred+SignalP,nucleotide exchange factor GrpE
+WP_001831211.1,GPApred,acetyl-CoA carboxylase biotin carboxyl carrier protein
+WP_001831215.1,GPApred+SignalP,YneF family protein
+WP_001831295.1,GPApred+SignalP,50S ribosomal protein L33
+WP_001831332.1,GPApred,sterile alpha motif-like domain-containing protein
+WP_001831346.1,GPApred,helix-turn-helix transcriptional regulator
+WP_001831354.1,GPApred,30S ribosomal protein S18
+WP_001831361.1,GPApred,DUF951 domain-containing protein
+WP_001831457.1,GPApred+SignalP,hypothetical protein
+WP_001831484.1,GPApred,hypothetical protein
+WP_001831625.1,GPApred+SignalP,zinc ribbon domain-containing protein
+WP_001831665.1,all,N-acetylmuramoyl-L-alanine amidase
+WP_001831683.1,GPApred+SignalP,dihydrolipoamide acetyltransferase family protein
+WP_001831711.1,GPApred+SignalP,glycopeptide resistance-associated protein GraF
+WP_001831744.1,GPApred+SignalP,YycH family regulatory protein
+WP_001831810.1,GPApred,DUF3147 family protein
+WP_001831873.1,all,beta-class phenol-soluble modulin
+WP_001831881.1,all,amidase domain-containing protein
+WP_001831885.1,GPApred,hypothetical protein
+WP_001831890.1,all,LPXTG cell wall anchor domain-containing protein
+WP_001831913.1,GPApred+SignalP,teichoic acid D-Ala incorporation-associated protein DltX
+WP_001831933.1,GPApred,fumarylacetoacetate hydrolase family protein
+WP_001831967.1,GPApred,CsbD family protein
+WP_001831994.1,GPApred+SignalP,hypothetical protein
+WP_001832064.1,GPApred+SignalP,hypothetical protein
+WP_001832142.1,GPApred+SignalP,SA0632 family lipoprotein
+WP_001832285.1,GPApred+DeepLocPro,50S ribosomal protein L33
+WP_001832324.1,GPApred+SignalP,gamma-glutamyltransferase
+WP_001832330.1,GPApred+SignalP,FeoB-associated Cys-rich membrane protein
+WP_001832458.1,GPApred+SignalP,hypothetical protein
+WP_001832461.1,GPApred,GlsB/YeaQ/YmgE family stress response membrane protein
+WP_001832481.1,GPApred,SE1626 family protein
+WP_001832593.1,GPApred,CsbA family protein
+WP_001832672.1,all,YSIRK signal domain/LPXTG anchor domain surface protein
+WP_001832675.1,GPApred+SignalP,YtxH domain-containing protein
+WP_001832759.1,GPApred,dihydrolipoyllysine-residue succinyltransferase
+WP_001832932.1,GPApred+SignalP,hypothetical protein
+WP_001833032.1,GPApred,Stk1 family PASTA domain-containing Ser/Thr kinase
+WP_002387625.1,GPApred+SignalP,DUF536 domain-containing protein
+WP_002437272.1,all,YSIRK-targeted triacylglycerol lipase
+WP_002437277.1,GPApred+SignalP,efflux RND transporter periplasmic adaptor subunit
+WP_002437520.1,GPApred+SignalP,hypothetical protein
+WP_002437588.1,GPApred,hypothetical protein
+WP_002437601.1,GPApred+SignalP,heavy metal translocating P-type ATPase
+WP_002437604.1,all,multicopper oxidase family protein
+WP_002437634.1,GPApred+SignalP,hypothetical protein
+WP_002437650.1,GPApred,hypothetical protein
+WP_002437676.1,all,beta-class phenol-soluble modulin
+WP_002437688.1,all,beta-class phenol-soluble modulin
+WP_002437978.1,GPApred+SignalP,SE2200 family small protein
+WP_002438015.1,GPApred,hypothetical protein
+WP_002438072.1,all,transglycosylase family protein
+WP_002438139.1,GPApred,hypothetical protein
+WP_002438227.1,GPApred+SignalP,hypothetical protein
+WP_002438284.1,GPApred+SignalP,putative metal homeostasis protein
+WP_002438420.1,GPApred+SignalP,hypothetical protein
+WP_002438441.1,GPApred,hypothetical protein
+WP_002438518.1,GPApred,molybdopterin converting factor subunit 1
+WP_002438539.1,GPApred,membrane stabilizing protein MspA
+WP_002438541.1,GPApred,SE1832 family protein
+WP_002438679.1,GPApred+SignalP,preprotein translocase subunit SecE
+WP_002438864.1,GPApred,hypothetical protein
+WP_002438963.1,GPApred,type II toxin-antitoxin system antitoxin TsaA
+WP_002438990.1,GPApred+SignalP,MetQ/NlpA family ABC transporter substrate-binding protein
+WP_002439348.1,GPApred,DUF2197 domain-containing protein
+WP_002439362.1,GPApred,DUF2129 domain-containing protein
+WP_002440288.1,GPApred,type I toxin-antitoxin system Fst family toxin
+WP_002440392.1,GPApred,Trp-rich small protein
+WP_002455955.1,all,hypothetical protein
+WP_002456066.1,all,hypothetical protein
+WP_002456455.1,GPApred,DNA translocase FtsK
+WP_002456490.1,GPApred+SignalP,"peptidoglycan D,D-transpeptidase FtsI family protein"
+WP_002456539.1,GPApred,threonine synthase
+WP_002456542.1,GPApred+SignalP,hypothetical protein
+WP_002456550.1,GPApred+SignalP,hypothetical protein
+WP_002456719.1,GPApred+SignalP,hypothetical protein
+WP_002456749.1,GPApred,hypothetical protein
+WP_002456758.1,all,Gldg family protein
+WP_002457133.1,GPApred+SignalP,phosphoglucosamine mutase
+WP_002467597.1,GPApred,DUF5325 family protein
+WP_002467715.1,all,hypothetical protein
+WP_002468298.1,GPApred+SignalP,DNA-directed RNA polymerase subunit delta
+WP_002468463.1,GPApred+SignalP,homoserine dehydrogenase
+WP_002468490.1,GPApred+SignalP,SAS053 family DNA gyrase inhibitor
+WP_002469060.1,GPApred+SignalP,hypothetical protein
+WP_002469109.1,GPApred,hypothetical protein
+WP_002470137.1,GPApred+SignalP,osmoprotectant ABC transporter substrate-binding protein
+WP_002470268.1,GPApred,cell division protein FtsQ/DivIB
+WP_002470802.1,GPApred+SignalP,DUF4887 domain-containing protein
+WP_002485262.1,GPApred+SignalP,pyrimidine-nucleoside phosphorylase
+WP_002485491.1,all,hypothetical protein
+WP_002485723.1,GPApred+SignalP,heavy metal translocating P-type ATPase
+WP_002485785.1,all,YSIRK-type signal peptide-containing protein
+WP_002486289.1,GPApred+SignalP,zinc ribbon domain-containing protein
+WP_002487864.1,all,SdrD B-like domain-containing protein
+WP_002489707.1,all,hypothetical protein
+WP_002489769.1,GPApred+SignalP,penicillin-binding protein
+WP_002489907.1,all,LPXTG cell wall anchor domain-containing protein
+WP_002493579.1,GPApred+SignalP,stressosome-associated protein Prli42
+WP_002494359.1,GPApred+SignalP,winged helix-turn-helix transcriptional regulator
+WP_002494433.1,GPApred+SignalP,hypothetical protein
+WP_002494543.1,GPApred,arsenical pump-driving ATPase
+WP_002494655.1,GPApred,type I toxin-antitoxin system Fst family toxin
+WP_002502616.1,GPApred+SignalP,hypothetical protein
+WP_010959181.1,GPApred,elastin-binding protein EbpS
+WP_011082604.1,GPApred+SignalP,transposase
+WP_032604652.1,GPApred+SignalP,transposase
+WP_032604695.1,GPApred+SignalP,hypothetical protein
+WP_049381035.1,GPApred+SignalP,hypothetical protein
+WP_049387514.1,all,MSCRAMM-like protein SdrH
+WP_049390275.1,GPApred+SignalP,hypothetical protein
+WP_054828573.1,GPApred+SignalP,HlyD family secretion protein
+WP_057504627.1,GPApred+SignalP,efflux RND transporter permease subunit
+WP_057504628.1,GPApred+DeepLocPro,lectin-like domain-containing protein
+WP_064783702.1,GPApred+SignalP,hypothetical protein
+WP_080388512.1,GPApred+SignalP,hyperosmolarity resistance protein Ebh
+WP_107362610.1,all,type I toxin-antitoxin system Fst family toxin
+WP_138936984.1,all,SdrD B-like domain-containing protein
+WP_138936985.1,GPApred,type I toxin-antitoxin system Fst family toxin
+WP_153801568.1,GPApred+DeepLocPro,hypothetical protein
+WP_161375103.1,GPApred+SignalP,hypothetical protein
+WP_162139018.1,GPApred+SignalP,hypothetical protein
+WP_162139018.1,GPApred+SignalP,hypothetical protein
+WP_162152262.1,GPApred+SignalP,hypothetical protein
+WP_162154119.1,GPApred,hypothetical protein
+WP_162154154.1,GPApred+SignalP,hypothetical protein
+WP_162155653.1,GPApred+SignalP,hypothetical protein
+WP_162161215.1,GPApred+SignalP,hypothetical protein
+WP_237640909.1,GPApred+SignalP,transporter
+WP_255262801.1,GPApred+SignalP,hypothetical protein
+WP_353616739.1,GPApred+SignalP,SAR1012 family small protein
+WP_410467994.1,all,SdrD B-like domain-containing protein
+WP_000122374.1,SignalP,MobV family relaxase
+WP_000162894.1,SignalP,YitT family protein
+WP_000163428.1,SignalP,dihydrolipoyl dehydrogenase family protein
+WP_000221967.1,SignalP,cassette chromosome ssDNA-binding protein
+WP_000277654.1,SignalP,replication initiation factor domain-containing protein
+WP_000282655.1,SignalP,thymidylate synthase
+WP_000391495.1,SignalP,ArsR/SmtB family transcription factor
+WP_000733270.1,SignalP+DeepLocPro,penicillin-hydrolyzing class A beta-lactamase BlaZ
+WP_000746201.1,SignalP,TlpA family protein disulfide reductase
+WP_000931963.1,SignalP+DeepLocPro,hypothetical protein
+WP_000968575.1,SignalP,hypothetical protein
+WP_001551920.1,SignalP,accessory Sec system glycosyltransferase GtfA
+WP_001551922.1,SignalP,accessory Sec system glycosylation chaperone GtfB
+WP_001551932.1,SignalP,cassette chromosome recombinase CcrA
+WP_001631030.1,SignalP,GNAT family N-acetyltransferase
+WP_001631034.1,SignalP,SAUGI family uracil-DNA glycosylase inhibitor
+WP_001631036.1,SignalP,cassette chromosome recombinase CcrA
+WP_001791613.1,SignalP,type I toxin-antitoxin system Fst family toxin
+WP_001802814.1,SignalP,hypothetical protein
+WP_001829251.1,SignalP,oligopeptide ABC transporter permease
+WP_001829253.1,SignalP,peptide ABC transporter substrate-binding protein
+WP_001829269.1,SignalP,lipoate--protein ligase
+WP_001829277.1,SignalP,bifunctional metallophosphatase/5'-nucleotidase
+WP_001829282.1,SignalP,competence protein CoiA
+WP_001829283.1,SignalP,acyltransferase family protein
+WP_001829285.1,SignalP,tryptophan--tRNA ligase
+WP_001829296.1,SignalP,YjcG family protein
+WP_001829311.1,SignalP,RluA family pseudouridine synthase
+WP_001829321.1,SignalP,TrkH family potassium uptake protein
+WP_001829324.1,SignalP,beta-ketoacyl-ACP synthase II
+WP_001829337.1,SignalP,DUF443 domain-containing protein
+WP_001829347.1,SignalP,GNAT family N-acetyltransferase
+WP_001829367.1,SignalP,hypothetical protein
+WP_001829373.1,SignalP,hypothetical protein
+WP_001829376.1,SignalP,tyrosine-type recombinase/integrase
+WP_001829380.1,SignalP+DeepLocPro,autolysin/adhesin Aae
+WP_001829386.1,SignalP,bifunctional cystathionine gamma-lyase/homocysteine desulfhydrase
+WP_001829387.1,SignalP,hypothetical protein
+WP_001829410.1,SignalP,xanthine phosphoribosyltransferase
+WP_001829416.1,SignalP,GNAT family N-acetyltransferase
+WP_001829430.1,SignalP,tubby C-terminal domain-like protein
+WP_001829441.1,SignalP,L-lactate dehydrogenase (quinone)
+WP_001829442.1,SignalP+DeepLocPro,immunodominant staphylococcal antigen IsaB family protein
+WP_001829451.1,SignalP,hypothetical protein
+WP_001829470.1,SignalP,CinA family nicotinamide mononucleotide deamidase-related protein
+WP_001829481.1,SignalP,hypothetical protein
+WP_001829501.1,SignalP,RIP metalloprotease RseP
+WP_001829512.1,SignalP,ribonuclease Y
+WP_001829514.1,SignalP,ribonuclease HII
+WP_001829562.1,SignalP,bifunctional acetaldehyde-CoA/alcohol dehydrogenase
+WP_001829568.1,SignalP,EMYY motif lipoprotein
+WP_001829572.1,SignalP,preprotein translocase subunit SecA
+WP_001829582.1,SignalP+DeepLocPro,class 1b ribonucleoside-diphosphate reductase subunit alpha
+WP_001829583.1,SignalP,hypothetical protein
+WP_001829591.1,SignalP,"2,3-bisphosphoglycerate-independent phosphoglycerate mutase"
+WP_001829592.1,SignalP,ComF family protein
+WP_001829638.1,SignalP,prolipoprotein diacylglyceryl transferase
+WP_001829640.1,SignalP,ABC transporter permease/substrate-binding protein
+WP_001829644.1,SignalP,threonine/serine exporter family protein
+WP_001829655.1,SignalP+DeepLocPro,hypothetical protein
+WP_001829658.1,SignalP,hypothetical protein
+WP_001829703.1,SignalP+DeepLocPro,30S ribosomal protein S13
+WP_001829706.1,SignalP,NAD-dependent protein deacylase
+WP_001829707.1,SignalP,preprotein translocase subunit SecY
+WP_001829717.1,SignalP,DUF2273 domain-containing protein
+WP_001829724.1,SignalP,PAQR family membrane homeostasis protein TrhA
+WP_001829729.1,SignalP,SepA family multidrug efflux transporter
+WP_001829752.1,SignalP,hypothetical protein
+WP_001829757.1,SignalP,NCS2 family permease
+WP_001829758.1,SignalP,PTS lactose/cellobiose transporter subunit IIA
+WP_001829760.1,SignalP,galactose-6-phosphate isomerase subunit LacA
+WP_001829780.1,SignalP,Asp23/Gls24 family envelope stress response protein
+WP_001829782.1,SignalP+DeepLocPro,50S ribosomal protein L16
+WP_001829793.1,SignalP,metal-dependent hydrolase
+WP_001829811.1,SignalP,signal transduction protein TRAP
+WP_001829818.1,SignalP,hypothetical protein
+WP_001829830.1,SignalP,methionine adenosyltransferase
+WP_001829836.1,SignalP,tRNA (uridine(34)/cytosine(34)/5-carboxymethylaminomethyluridine(34)-2'-O)-methyltransferase TrmL
+WP_001829846.1,SignalP,ferrochelatase
+WP_001829912.1,SignalP,CDF family zinc efflux transporter CzrB
+WP_001829921.1,SignalP,metallophosphoesterase family protein
+WP_001829922.1,SignalP,UDP-N-acetylglucosamine 1-carboxyvinyltransferase
+WP_001829925.1,SignalP,CdaR family protein
+WP_001829926.1,SignalP,lytic transglycosylase
+WP_001829936.1,SignalP,F0F1 ATP synthase subunit A
+WP_001829952.1,SignalP,anti-sigma factor antagonist
+WP_001829978.1,SignalP,UDP-N-acetylglucosamine 1-carboxyvinyltransferase
+WP_001829994.1,SignalP,ribosomal protein S18-alanine N-acetyltransferase
+WP_001830004.1,SignalP,ABC-F family ATP-binding cassette domain-containing protein
+WP_001830005.1,SignalP,accessory gene regulator AgrB
+WP_001830011.1,SignalP,sucrose-6-phosphate hydrolase
+WP_001830015.1,SignalP,tRNA (adenosine(37)-N6)-threonylcarbamoyltransferase complex transferase subunit TsaD
+WP_001830019.1,SignalP,sulfurtransferase TusA family protein
+WP_001830020.1,SignalP,ketol-acid reductoisomerase
+WP_001830032.1,SignalP,hypothetical protein
+WP_001830036.1,SignalP+DeepLocPro,CHAP domain-containing protein
+WP_001830037.1,SignalP,FAD-dependent monooxygenase
+WP_001830040.1,SignalP,DUF4870 domain-containing protein
+WP_001830043.1,SignalP,LCP family protein
+WP_001830080.1,SignalP,signal recognition particle-docking protein FtsY
+WP_001830086.1,SignalP,YggT family protein
+WP_001830094.1,SignalP,glutamate racemase
+WP_001830097.1,SignalP,cell division peptidoglycan polymerase FtsW
+WP_001830106.1,SignalP,VOC family protein
+WP_001830116.1,SignalP,fatty acid kinase catalytic subunit FakA
+WP_001830124.1,SignalP,16S rRNA (cytosine(967)-C(5))-methyltransferase RsmB
+WP_001830131.1,SignalP,COX15/CtaA family protein
+WP_001830132.1,SignalP,glycerophosphodiester phosphodiesterase
+WP_001830165.1,SignalP,succinate dehydrogenase iron-sulfur subunit
+WP_001830174.1,SignalP,uracil-xanthine permease family protein
+WP_001830175.1,SignalP,excinuclease ABC subunit UvrC
+WP_001830193.1,SignalP,succinate dehydrogenase flavoprotein subunit
+WP_001830323.1,SignalP,chorismate-binding protein
+WP_001830330.1,SignalP,7-carboxy-7-deazaguanine synthase QueE
+WP_001830332.1,SignalP,DoxX family protein
+WP_001830333.1,SignalP,hypothetical protein
+WP_001830349.1,SignalP,anthranilate synthase component II
+WP_001830357.1,SignalP,Cys-tRNA(Pro) deacylase
+WP_001830365.1,SignalP,DUF3267 domain-containing protein
+WP_001830372.1,SignalP+DeepLocPro,immunodominant staphylococcal antigen IsaB family protein
+WP_001830373.1,SignalP,DUF4097 family beta strand repeat-containing protein
+WP_001830378.1,SignalP,co-chaperone GroES
+WP_001830379.1,SignalP,phenol-soluble modulin export ABC transporter permease subunit PmtD
+WP_001830392.1,SignalP,H-type ferritin FtnA
+WP_001830401.1,SignalP,YtxH domain-containing protein
+WP_001830405.1,SignalP,3'-5' exonuclease
+WP_001830409.1,SignalP,monofunctional peptidoglycan glycosyltransferase SgtB
+WP_001830411.1,SignalP,YihY/virulence factor BrkB family protein
+WP_001830414.1,SignalP,type 1 glutamine amidotransferase domain-containing protein
+WP_001830417.1,SignalP,recombination regulator RecX
+WP_001830424.1,SignalP,metal-dependent hydrolase
+WP_001830426.1,SignalP,membrane protein
+WP_001830428.1,SignalP,manganese-dependent inorganic pyrophosphatase
+WP_001830434.1,SignalP,ATP-binding cassette domain-containing protein
+WP_001830440.1,SignalP,adenylosuccinate lyase
+WP_001830449.1,SignalP,thioredoxin-dependent thiol peroxidase
+WP_001830462.1,SignalP,staphylopine-dependent metal ABC transporter substrate-binding lipoprotein CntA
+WP_001830464.1,SignalP,biotin synthase BioB
+WP_001830467.1,SignalP+DeepLocPro,"5'-nucleotidase, lipoprotein e(P4) family"
+WP_001830471.1,SignalP,dihydrolipoyl dehydrogenase
+WP_001830474.1,SignalP,hypothetical protein
+WP_001830478.1,SignalP,MFS transporter
+WP_001830486.1,SignalP,hypothetical protein
+WP_001830488.1,SignalP,SLC45 family MFS transporter
+WP_001830497.1,SignalP,osmoprotectant ABC transporter substrate-binding protein
+WP_001830510.1,SignalP,ArgE/DapE family deacylase
+WP_001830511.1,SignalP,pyruvate formate-lyase-activating protein
+WP_001830516.1,SignalP,3-hydroxyacyl-CoA dehydrogenase NAD-binding domain-containing protein
+WP_001830526.1,SignalP,DsrE/DsrF/DrsH-like family protein
+WP_001830531.1,SignalP,FosB family fosfomycin resistance bacillithiol transferase
+WP_001830532.1,SignalP,staphylopine uptake ABC transporter ATP-binding protein CntD
+WP_001830555.1,SignalP,ABC transporter permease
+WP_001830557.1,SignalP+DeepLocPro,staphostatin A
+WP_001830582.1,SignalP,nickel/cobalt ABC transporter permease
+WP_001830585.1,SignalP,dihydroxyacetone kinase phosphoryl donor subunit DhaM
+WP_001830593.1,SignalP,choline dehydrogenase
+WP_001830617.1,SignalP,antibiotic biosynthesis monooxygenase family protein
+WP_001830626.1,SignalP,acetolactate decarboxylase
+WP_001830628.1,SignalP,oxidoreductase
+WP_001830640.1,SignalP,hypothetical protein
+WP_001830651.1,SignalP,L-lactate dehydrogenase (quinone)
+WP_001830656.1,SignalP,acyl-CoA synthetase MbcS
+WP_001830671.1,SignalP,3-methyl-2-oxobutanoate hydroxymethyltransferase
+WP_001830724.1,SignalP,sigma-70 family RNA polymerase sigma factor
+WP_001830727.1,SignalP,N-acetylglucosaminidase
+WP_001830731.1,SignalP,transaldolase
+WP_001830734.1,SignalP,competence protein ComK
+WP_001830743.1,SignalP,sulfite exporter TauE/SafE family protein
+WP_001830748.1,SignalP,peptidase U32 family protein
+WP_001830762.1,SignalP,replication initiation and membrane attachment family protein
+WP_001830773.1,SignalP,glutamyl-tRNA reductase
+WP_001830775.1,SignalP,alanine dehydrogenase
+WP_001830777.1,SignalP,tRNA threonylcarbamoyladenosine dehydratase
+WP_001830778.1,SignalP,PepSY domain-containing protein
+WP_001830779.1,SignalP,YtpR family tRNA-binding protein
+WP_001830781.1,SignalP,LLM class flavin-dependent oxidoreductase
+WP_001830797.1,SignalP,ribosomal-processing cysteine protease Prp
+WP_001830800.1,SignalP,preprotein translocase subunit YajC
+WP_001830806.1,SignalP,cysteine metabolism transcriptional regulator CymR
+WP_001830813.1,SignalP,NAD(P)/FAD-dependent oxidoreductase
+WP_001830820.1,SignalP+DeepLocPro,50S ribosomal protein L21
+WP_001830822.1,SignalP,50S ribosomal protein L27
+WP_001830832.1,SignalP,rod shape-determining protein MreC
+WP_001830843.1,SignalP,N-acetylmuramoyl-L-alanine amidase
+WP_001830844.1,SignalP,catabolite control protein A
+WP_001830860.1,SignalP,cysteine desulfurase family protein
+WP_001830863.1,SignalP,protein translocase subunit SecDF
+WP_001830867.1,SignalP,two-component system histidine kinase PnpS
+WP_001830868.1,SignalP,DUF948 domain-containing protein
+WP_001830889.1,SignalP,citrate synthase
+WP_001830900.1,SignalP,amino acid permease
+WP_001830902.1,SignalP,transglycosylase domain-containing protein
+WP_001830931.1,SignalP,helix-hairpin-helix domain-containing protein
+WP_001830933.1,SignalP,alpha-ketoacid dehydrogenase subunit beta
+WP_001830936.1,SignalP,phosphate ABC transporter permease subunit PstC
+WP_001830939.1,SignalP,dihydrolipoyl dehydrogenase
+WP_001830948.1,SignalP,carbohydrate ABC transporter permease
+WP_001830952.1,SignalP,trimethoprim-sensitive dihydrofolate reductase DfrC
+WP_001830968.1,SignalP,phosphate signaling complex protein PhoU
+WP_001830978.1,SignalP,pseudouridine synthase
+WP_001830981.1,SignalP,DNA repair protein RecN
+WP_001830988.1,SignalP,ECF transporter S component
+WP_001831013.1,SignalP,nickel ABC transporter permease
+WP_001831016.1,SignalP,MBL fold metallo-hydrolase
+WP_001831017.1,SignalP,phosphatase PAP2 family protein
+WP_001831025.1,SignalP,competence type IV pilus minor pilin ComGD
+WP_001831032.1,SignalP,transglycosylase domain-containing protein
+WP_001831043.1,SignalP,HAMP domain-containing sensor histidine kinase
+WP_001831045.1,SignalP,zinc metallopeptidase
+WP_001831046.1,SignalP,alanine/glycine:cation symporter family protein
+WP_001831049.1,SignalP,PhoH family protein
+WP_001831053.1,SignalP,NfeD family protein
+WP_001831058.1,SignalP,acetylornithine transaminase
+WP_001831061.1,SignalP,transketolase
+WP_001831062.1,SignalP,nickel transporter permease
+WP_001831067.1,SignalP,LCP family protein
+WP_001831083.1,SignalP,ABC transporter permease
+WP_001831097.1,SignalP,phosphate ABC transporter ATP-binding protein PstB
+WP_001831110.1,SignalP,NifU N-terminal domain-containing protein
+WP_001831113.1,SignalP,ROK family glucokinase
+WP_001831116.1,SignalP,hypothetical protein
+WP_001831118.1,SignalP,peptide-methionine (S)-S-oxide reductase MsrA
+WP_001831120.1,SignalP,polyprenyl synthetase family protein
+WP_001831122.1,SignalP,BCCT family transporter
+WP_001831125.1,SignalP,DNA polymerase III subunit delta
+WP_001831136.1,SignalP,ABC transporter permease
+WP_001831141.1,SignalP,4-hydroxy-tetrahydrodipicolinate synthase
+WP_001831142.1,SignalP,rRNA maturation RNase YbeY
+WP_001831148.1,SignalP,DNA damage-induced cell division inhibitor SosA
+WP_001831150.1,SignalP,ATP-binding protein
+WP_001831154.1,SignalP,NAD(P)H-dependent glycerol-3-phosphate dehydrogenase
+WP_001831156.1,SignalP,DUF309 domain-containing protein
+WP_001831161.1,SignalP,YpiB family protein
+WP_001831166.1,SignalP,THUMP domain-containing class I SAM-dependent RNA methyltransferase
+WP_001831193.1,SignalP,hypothetical protein
+WP_001831198.1,SignalP,diaminopimelate decarboxylase
+WP_001831206.1,SignalP,PstS family phosphate ABC transporter substrate-binding protein
+WP_001831209.1,SignalP,phosphate ABC transporter permease PstA
+WP_001831212.1,SignalP,S41 family peptidase
+WP_001831213.1,SignalP,asparaginase
+WP_001831217.1,SignalP,superoxide dismutase
+WP_001831225.1,SignalP,extracellular solute-binding protein
+WP_001831227.1,SignalP,NRAMP family divalent metal transporter
+WP_001831237.1,SignalP,large conductance mechanosensitive channel protein MscL
+WP_001831238.1,SignalP,dihydrolipoamide acetyltransferase family protein
+WP_001831239.1,SignalP,RNA-binding virulence regulatory protein CvfB
+WP_001831241.1,SignalP,YozE family protein
+WP_001831247.1,SignalP,fatty acid kinase binding subunit FakB2
+WP_001831251.1,SignalP,toxic anion resistance protein
+WP_001831257.1,SignalP,diacylglycerol kinase family protein
+WP_001831262.1,SignalP,ferredoxin
+WP_001831271.1,SignalP,competence type IV pilus major pilin ComGC
+WP_001831280.1,SignalP,ABC transporter permease
+WP_001831293.1,SignalP,GNAT family N-acetyltransferase
+WP_001831297.1,SignalP,prephenate dehydrogenase
+WP_001831301.1,SignalP,acetyl-CoA carboxylase biotin carboxylase subunit
+WP_001831310.1,SignalP,aldo/keto reductase
+WP_001831322.1,SignalP,5'-methylthioadenosine/adenosylhomocysteine nucleosidase
+WP_001831324.1,SignalP,tryptophan synthase subunit beta
+WP_001831327.1,SignalP,dipeptide/oligopeptide/nickel ABC transporter ATP-binding protein
+WP_001831347.1,SignalP,epilancin biosynthesis-related protein ElxI1
+WP_001831355.1,SignalP,hypothetical protein
+WP_001831406.1,SignalP,ABC transporter ATP-binding protein
+WP_001831464.1,SignalP,ABC transporter permease
+WP_001831473.1,SignalP,glycerol-3-phosphate transporter
+WP_001831482.1,SignalP,DUF3139 domain-containing protein
+WP_001831490.1,SignalP,FUSC family protein
+WP_001831509.1,SignalP,CDP-glycerol glycerophosphotransferase family protein
+WP_001831549.1,SignalP,alpha/beta hydrolase
+WP_001831551.1,SignalP,malate dehydrogenase (quinone)
+WP_001831562.1,SignalP,aldose epimerase family protein
+WP_001831565.1,SignalP,2-dehydropantoate 2-reductase
+WP_001831566.1,SignalP,hypothetical protein
+WP_001831576.1,SignalP,amino acid ABC transporter permease
+WP_001831616.1,SignalP,thiazole biosynthesis adenylyltransferase ThiF
+WP_001831622.1,SignalP,DUF4467 domain-containing protein
+WP_001831626.1,SignalP,DUF4097 family beta strand repeat-containing protein
+WP_001831629.1,SignalP,ABC transporter permease
+WP_001831650.1,SignalP,dihydrolipoyl dehydrogenase
+WP_001831654.1,SignalP,alpha-ketoacid dehydrogenase subunit beta
+WP_001831657.1,SignalP,oleate hydratase
+WP_001831680.1,SignalP,"1,4-dihydroxy-2-naphthoate polyprenyltransferase"
+WP_001831704.1,SignalP,ribonucleoside hydrolase RihC
+WP_001831714.1,SignalP,lipoteichoic acid stability factor AuxB
+WP_001831727.1,SignalP,phosphoribosylformylglycinamidine synthase I
+WP_001831729.1,SignalP,DUF2538 family protein
+WP_001831736.1,SignalP,cytochrome aa3 quinol oxidase subunit II
+WP_001831738.1,SignalP,cytochrome aa3 quinol oxidase subunit III
+WP_001831740.1,SignalP,phosphoenolpyruvate--protein phosphotransferase
+WP_001831741.1,SignalP+DeepLocPro,DUF5011 domain-containing protein
+WP_001831750.1,SignalP,two-component system regulatory protein YycI
+WP_001831751.1,SignalP,VraH family peptide resistance protein
+WP_001831755.1,SignalP,lipoprotein
+WP_001831756.1,SignalP,ABC transporter ATP-binding protein
+WP_001831762.1,SignalP,NAD(P)H-hydrate dehydratase
+WP_001831769.1,SignalP,ABC transporter permease
+WP_001831794.1,SignalP,nucleoid occlusion protein
+WP_001831818.1,SignalP,tRNA uridine-5-carboxymethylaminomethyl(34) synthesis enzyme MnmG
+WP_001831844.1,SignalP,organic hydroperoxide resistance protein
+WP_001831846.1,SignalP,accessory Sec system protein translocase subunit SecY2
+WP_001831857.1,SignalP,CapA family protein
+WP_001831870.1,SignalP,alpha/beta hydrolase
+WP_001831892.1,SignalP,"mannose-6-phosphate isomerase, class I"
+WP_001831895.1,SignalP,YutD family protein
+WP_001831904.1,SignalP,D-alanyl-lipoteichoic acid biosynthesis protein DltD
+WP_001831907.1,SignalP,thioredoxin family protein
+WP_001831910.1,SignalP,methionine ABC transporter permease
+WP_001831939.1,SignalP,DUF368 domain-containing protein
+WP_001831951.1,SignalP,YuzD family protein
+WP_001831966.1,SignalP,NAD(P)/FAD-dependent oxidoreductase
+WP_001831974.1,SignalP,type I 3-dehydroquinate dehydratase
+WP_001831977.1,SignalP,D-alanine--poly(phosphoribitol) ligase subunit DltA
+WP_001831979.1,SignalP,lipoyl synthase
+WP_001831987.1,SignalP+DeepLocPro,glycerophosphodiester phosphodiesterase
+WP_001832016.1,SignalP,bifunctional metallophosphatase/5'-nucleotidase
+WP_001832022.1,SignalP,ABC transporter permease VraG
+WP_001832023.1,SignalP,protein VraC
+WP_001832026.1,SignalP,GNAT family N-acetyltransferase
+WP_001832041.1,SignalP,ABC transporter permease
+WP_001832082.1,SignalP,undecaprenyl-diphosphate phosphatase
+WP_001832086.1,SignalP+DeepLocPro,LysM peptidoglycan-binding domain-containing protein
+WP_001832101.1,SignalP,iron-sulfur cluster repair di-iron protein ScdA
+WP_001832103.1,SignalP,manganese ABC transporter substrate-binding lipoprotein MntC
+WP_001832107.1,SignalP,helix-turn-helix transcriptional regulator
+WP_001832119.1,SignalP,hypothetical protein
+WP_001832127.1,SignalP,hypothetical protein
+WP_001832157.1,SignalP,ABC transporter ATP-binding protein
+WP_001832176.1,SignalP,Bax inhibitor-1/YccA family protein
+WP_001832199.1,SignalP,ATP-dependent zinc metalloprotease FtsH
+WP_001832211.1,SignalP,dTMP kinase
+WP_001832224.1,SignalP,16S rRNA (adenine(1518)-N(6)/adenine(1519)-N(6))-dimethyltransferase RsmA
+WP_001832235.1,SignalP,16S rRNA (cytidine(1402)-2'-O)-methyltransferase
+WP_001832241.1,SignalP,cell division protein DivIC
+WP_001832263.1,SignalP,NtaA/DmoA family FMN-dependent monooxygenase
+WP_001832265.1,SignalP,UvrB/UvrC motif-containing protein
+WP_001832276.1,SignalP,GNAT family N-acetyltransferase
+WP_001832289.1,SignalP,elongation factor Tu
+WP_001832291.1,SignalP,deoxynucleoside kinase
+WP_001832298.1,SignalP,50S ribosomal protein L11
+WP_001832314.1,SignalP+DeepLocPro,50S ribosomal protein L1
+WP_001832317.1,SignalP,NYN domain-containing protein
+WP_001832339.1,SignalP,glucose-specific PTS transporter subunit IIBC
+WP_001832343.1,SignalP,CPBP family intramembrane glutamic endopeptidase
+WP_001832356.1,SignalP,ferrous iron transport protein B
+WP_001832358.1,SignalP,D-lactate dehydrogenase
+WP_001832365.1,SignalP,heavy metal translocating P-type ATPase
+WP_001832382.1,SignalP,urease accessory protein UreE
+WP_001832399.1,SignalP,urease subunit alpha
+WP_001832405.1,SignalP,urea transporter
+WP_001832425.1,SignalP,PH domain-containing protein
+WP_001832478.1,SignalP,MutS-related protein
+WP_001832485.1,SignalP,tRNA (adenosine(37)-N6)-threonylcarbamoyltransferase complex dimerization subunit type 1 TsaB
+WP_001832526.1,SignalP,mechanosensitive ion channel family protein
+WP_001832554.1,SignalP,polyribonucleotide nucleotidyltransferase
+WP_001832566.1,SignalP,glycerol-3-phosphate dehydrogenase/oxidase
+WP_001832578.1,SignalP+DeepLocPro,YSIRK-targeted triacylglycerol lipase
+WP_001832584.1,SignalP,hypothetical protein
+WP_001832592.1,SignalP+DeepLocPro,hypothetical protein
+WP_001832596.1,SignalP,preQ(1) synthase
+WP_001832602.1,SignalP,DUF4260 domain-containing protein
+WP_001832606.1,SignalP,acyltransferase
+WP_001832607.1,SignalP,peptide MFS transporter
+WP_001832636.1,SignalP,Na+/H+ antiporter NhaC
+WP_001832638.1,SignalP,N-acetylglucosaminidase
+WP_001832639.1,SignalP,2-hydroxyacid dehydrogenase family protein
+WP_001832647.1,SignalP,AI-2E family transporter
+WP_001832690.1,SignalP,A24 family peptidase
+WP_001832695.1,SignalP,tetratricopeptide repeat protein
+WP_001832701.1,SignalP,thiol peroxidase
+WP_001832708.1,SignalP,DUF4930 family protein
+WP_001832728.1,SignalP,ABC transporter substrate-binding protein
+WP_001832731.1,SignalP,6-phospho-beta-galactosidase
+WP_001832732.1,SignalP,FecCD family ABC transporter permease
+WP_001832736.1,SignalP,bifunctional hydroxymethylpyrimidine kinase/phosphomethylpyrimidine kinase
+WP_001832742.1,SignalP,aldehyde dehydrogenase family protein
+WP_001832780.1,SignalP,biotin-dependent carboxyltransferase family protein
+WP_001832893.1,SignalP,membrane protein insertase YidC
+WP_001832894.1,SignalP,HAMP domain-containing sensor histidine kinase
+WP_001832991.1,SignalP,teichoic acid glycerol-phosphate primase TarB
+WP_001833067.1,SignalP,LCP family protein
+WP_001833073.1,SignalP,serine hydrolase domain-containing protein
+WP_002387626.1,SignalP,replication initiator protein A
+WP_002437110.1,SignalP,YibE/F family protein
+WP_002437175.1,SignalP,NDxxF motif lipoprotein
+WP_002437208.1,SignalP+DeepLocPro,GH25 family lysozyme
+WP_002437239.1,SignalP,ABC-2 transporter permease
+WP_002437250.1,SignalP,hypothetical protein
+WP_002437258.1,SignalP,signal peptidase I
+WP_002437267.1,SignalP,ABC transporter ATP-binding protein
+WP_002437268.1,SignalP,FtsX-like permease family protein
+WP_002437279.1,SignalP,YIP1 family protein
+WP_002437319.1,SignalP,YybS family protein
+WP_002437327.1,SignalP,cell wall metabolism sensor histidine kinase WalK
+WP_002437591.1,SignalP,ABC transporter permease
+WP_002437630.1,SignalP,ArsR/SmtB family transcription factor
+WP_002437636.1,SignalP,tandem-type lipoprotein
+WP_002437638.1,SignalP,tandem-type lipoprotein
+WP_002437642.1,SignalP,HAD-IIB family hydrolase
+WP_002437653.1,SignalP,DUF1433 domain-containing protein
+WP_002437663.1,SignalP,SDR family NAD(P)-dependent oxidoreductase
+WP_002437672.1,SignalP,sensor histidine kinase
+WP_002437673.1,SignalP,extracellular solute-binding protein
+WP_002437674.1,SignalP,hypothetical protein
+WP_002437704.1,SignalP+DeepLocPro,cysteine protease staphopain
+WP_002437716.1,SignalP,nucleoside recognition domain-containing protein
+WP_002437717.1,SignalP,NAD(P)/FAD-dependent oxidoreductase
+WP_002437720.1,SignalP,"metal ABC transporter solute-binding protein, Zn/Mn family"
+WP_002437750.1,SignalP,staphylopine uptake ABC transporter permease subunit CntC
+WP_002437763.1,SignalP,thioesterase family protein
+WP_002437839.1,SignalP,imidazoleglycerol-phosphate dehydratase HisB
+WP_002437882.1,SignalP,accessory Sec system glycosyltransferase GtfA
+WP_002437887.1,SignalP+DeepLocPro,hypothetical protein
+WP_002438011.1,SignalP,sulfite exporter TauE/SafE family protein
+WP_002438102.1,SignalP+DeepLocPro,CHAP domain-containing protein
+WP_002438141.1,SignalP,class A sortase SrtA
+WP_002438147.1,SignalP,aldehyde dehydrogenase family protein
+WP_002438150.1,SignalP,VOC family protein
+WP_002438159.1,SignalP,YkvI family membrane protein
+WP_002438170.1,SignalP,glycine oxidase ThiO
+WP_002438172.1,SignalP,thiamine phosphate synthase
+WP_002438178.1,SignalP,putative quinol monooxygenase
+WP_002438231.1,SignalP,YehR family lipoprotein
+WP_002438243.1,SignalP,carboxylesterase family protein
+WP_002438282.1,SignalP,"2,3-diphosphoglycerate-dependent phosphoglycerate mutase"
+WP_002438286.1,SignalP,transporter substrate-binding domain-containing protein
+WP_002438293.1,SignalP,aminoacyltransferase
+WP_002438295.1,SignalP,DsbA family protein
+WP_002438299.1,SignalP,formate/nitrite transporter family protein
+WP_002438301.1,SignalP,GNAT family N-acetyltransferase
+WP_002438303.1,SignalP,nickel ABC transporter substrate-binding protein
+WP_002438317.1,SignalP,nitrate reductase subunit beta
+WP_002438338.1,SignalP,DUF4889 domain-containing protein
+WP_002438342.1,SignalP,AraC family transcriptional regulator Rsp
+WP_002438349.1,SignalP,magnesium transporter CorA family protein
+WP_002438397.1,SignalP,thioesterase family protein
+WP_002438434.1,SignalP,MurR/RpiR family transcriptional regulator
+WP_002438493.1,SignalP,nucleoside hydrolase
+WP_002438502.1,SignalP,molybdate ABC transporter substrate-binding protein
+WP_002438506.1,SignalP,ThiF family adenylyltransferase
+WP_002438508.1,SignalP,MogA/MoaB family molybdenum cofactor biosynthesis protein
+WP_002438509.1,SignalP,cyclic pyranopterin monophosphate synthase MoaC
+WP_002438731.1,SignalP,choloylglycine hydrolase family protein
+WP_002438748.1,SignalP,GNAT family N-acetyltransferase
+WP_002438776.1,SignalP,MerR family transcriptional regulator
+WP_002438783.1,SignalP+DeepLocPro,SA0570 family protein
+WP_002438787.1,SignalP+DeepLocPro,hypothetical protein
+WP_002438830.1,SignalP,alpha/beta hydrolase
+WP_002438833.1,SignalP,histidine kinase GraS/ApsS
+WP_002438862.1,SignalP,malate dehydrogenase
+WP_002438866.1,SignalP,DUF1361 domain-containing protein
+WP_002438906.1,SignalP,peptidase T
+WP_002438914.1,SignalP,thioredoxin-disulfide reductase
+WP_002438954.1,SignalP,YagU family protein
+WP_002438966.1,SignalP+DeepLocPro,sterile alpha motif-like domain-containing protein
+WP_002438979.1,SignalP,glycine cleavage system protein GcvH
+WP_002439440.1,SignalP,carbamoyl-phosphate synthase large subunit
+WP_002439460.1,SignalP,Stp1/IreP family PP2C-type Ser/Thr phosphatase
+WP_002439503.1,SignalP,tyrosine recombinase XerC
+WP_002439519.1,SignalP,ribosome maturation factor RimP
+WP_002439528.1,SignalP,30S ribosomal protein S15
+WP_002439534.1,SignalP,DNA translocase FtsK
+WP_002439555.1,SignalP,hypothetical protein
+WP_002439583.1,SignalP,tRNA (adenosine(37)-N6)-dimethylallyltransferase MiaA
+WP_002439636.1,SignalP,CAP domain-containing protein
+WP_002440043.1,SignalP,competence type IV pilus minor pilin ComGF
+WP_002440071.1,SignalP,RNA polymerase sigma factor RpoD
+WP_002440364.1,SignalP,hypothetical protein
+WP_002440602.1,SignalP,RNA polymerase sigma factor SigB
+WP_002440903.1,SignalP+DeepLocPro,CHAP domain-containing protein
+WP_002440903.1,SignalP+DeepLocPro,CHAP domain-containing protein
+WP_002446224.1,SignalP,cell division protein FtsL
+WP_002447173.1,SignalP,APC family permease
+WP_002447403.1,SignalP,universal stress protein
+WP_002447628.1,SignalP,MBL fold metallo-hydrolase
+WP_002455929.1,SignalP+DeepLocPro,sphingomyelin phosphodiesterase
+WP_002455937.1,SignalP+DeepLocPro,immunodominant staphylococcal antigen IsaB family protein
+WP_002455948.1,SignalP,sulfite exporter TauE/SafE family protein
+WP_002455951.1,SignalP,permease
+WP_002455952.1,SignalP+DeepLocPro,tandem-type lipoprotein
+WP_002455953.1,SignalP,mechanosensitive ion channel family protein
+WP_002455958.1,SignalP,L-lactate dehydrogenase (quinone)
+WP_002455961.1,SignalP,hexose-6-phosphate:phosphate antiporter
+WP_002455963.1,SignalP+DeepLocPro,trypsin-like serine peptidase
+WP_002456003.1,SignalP,FecCD family ABC transporter permease
+WP_002456004.1,SignalP,ABC transporter substrate-binding protein
+WP_002456009.1,SignalP,nickel-dependent lactate racemase
+WP_002456033.1,SignalP,zinc-dependent alcohol dehydrogenase family protein
+WP_002456035.1,SignalP,aldehyde dehydrogenase
+WP_002456056.1,SignalP,sirohydrochlorin chelatase
+WP_002456102.1,SignalP,CYTH domain-containing protein
+WP_002456133.1,SignalP,PTS fructose transporter subunit IIABC
+WP_002456176.1,SignalP,16S rRNA (uracil(1498)-N(3))-methyltransferase
+WP_002456218.1,SignalP,GTPase HflX
+WP_002456313.1,SignalP,ABC transporter permease
+WP_002456348.1,SignalP,ABC transporter substrate-binding protein/permease
+WP_002456350.1,SignalP,ATP-binding protein
+WP_002456352.1,SignalP,foldase protein PrsA
+WP_002456353.1,SignalP,YtxH domain-containing protein
+WP_002456354.1,SignalP,ABC transporter permease EcsB
+WP_002456422.1,SignalP,site-specific integrase
+WP_002456424.1,SignalP+DeepLocPro,halocin C8 precursor-like protein
+WP_002456441.1,SignalP,hypothetical protein
+WP_002456453.1,SignalP,YtxH domain-containing protein
+WP_002456457.1,SignalP,S1C family serine protease
+WP_002456484.1,SignalP,hypothetical protein
+WP_002456487.1,SignalP,glycine--tRNA ligase
+WP_002456499.1,SignalP,aromatic acid exporter family protein
+WP_002456519.1,SignalP,VOC family protein
+WP_002456533.1,SignalP,DNA topoisomerase IV subunit B
+WP_002456551.1,SignalP,hypothetical protein
+WP_002456559.1,SignalP,DNA mismatch repair endonuclease MutL
+WP_002456562.1,SignalP,YmfK family protein
+WP_002456610.1,SignalP,Nramp family divalent metal transporter
+WP_002456635.1,SignalP,ribulokinase
+WP_002456656.1,SignalP,ABC transporter permease
+WP_002456711.1,SignalP,zinc-ribbon domain-containing protein
+WP_002456718.1,SignalP,sensor histidine kinase
+WP_002456720.1,SignalP+DeepLocPro,alkaline phosphatase
+WP_002456741.1,SignalP,alpha-keto acid decarboxylase family protein
+WP_002456744.1,SignalP+DeepLocPro,M4 family metallopeptidase
+WP_002456747.1,SignalP+DeepLocPro,DUF1672 domain-containing protein
+WP_002456765.1,SignalP,hypothetical protein
+WP_002456769.1,SignalP,YfcC family protein
+WP_002456835.1,SignalP+DeepLocPro,pentapeptide repeat-containing protein
+WP_002456836.1,SignalP,dipeptide ABC transporter glycylmethionine-binding lipoprotein
+WP_002456849.1,SignalP,glycosyltransferase
+WP_002456926.1,SignalP,hemolysin family protein
+WP_002456931.1,SignalP,hypothetical protein
+WP_002456953.1,SignalP,signal peptidase I
+WP_002456954.1,SignalP,signal peptidase I
+WP_002456958.1,SignalP,CoA-disulfide reductase
+WP_002456966.1,SignalP,N-acetylmuramic acid 6-phosphate etherase
+WP_002456989.1,SignalP,energy-coupling factor transporter transmembrane component T family protein
+WP_002456999.1,SignalP,UTP--glucose-1-phosphate uridylyltransferase
+WP_002457081.1,SignalP,isochorismatase family cysteine hydrolase
+WP_002457091.1,SignalP,FUSC family protein
+WP_002457099.1,SignalP,phosphoglycerate dehydrogenase
+WP_002457109.1,SignalP,PH domain-containing protein
+WP_002457111.1,SignalP,PH domain-containing protein
+WP_002457121.1,SignalP,single-stranded DNA-binding protein
+WP_002457122.1,SignalP,F0F1 ATP synthase subunit B
+WP_002457867.1,SignalP,membrane protein insertion efficiency factor YidD
+WP_002467717.1,SignalP,CapA family protein
+WP_002467724.1,SignalP+DeepLocPro,hypothetical protein
+WP_002467727.1,SignalP,poly-gamma-glutamate synthase PgsB
+WP_002467848.1,SignalP,riboflavin synthase
+WP_002467980.1,SignalP,hypothetical protein
+WP_002468002.1,SignalP,ABC transporter ATP-binding protein
+WP_002468003.1,SignalP+DeepLocPro,thermonuclease NucI
+WP_002468056.1,SignalP,septation ring formation regulator EzrA
+WP_002468185.1,SignalP,MupG family TIM beta-alpha barrel fold protein
+WP_002468207.1,SignalP,CPBP family intramembrane glutamic endopeptidase
+WP_002468221.1,SignalP,CPBP family intramembrane glutamic endopeptidase
+WP_002468299.1,SignalP,GNAT family N-acetyltransferase
+WP_002468316.1,SignalP,type I phosphomannose isomerase catalytic subunit
+WP_002468460.1,SignalP,hypothetical protein
+WP_002468469.1,SignalP,"phosphonate ABC transporter, permease protein PhnE"
+WP_002468470.1,SignalP,hypothetical protein
+WP_002468913.1,SignalP,DUF4355 domain-containing protein
+WP_002468914.1,SignalP,YfhO family protein
+WP_002469110.1,SignalP,Cof-type HAD-IIB family hydrolase
+WP_002469303.1,SignalP+DeepLocPro,DUF1672 domain-containing protein
+WP_002469371.1,SignalP,carbon-nitrogen family hydrolase
+WP_002469377.1,SignalP,ABC transporter permease
+WP_002469436.1,SignalP,phosphatase PAP2 family protein
+WP_002469530.1,SignalP,TVP38/TMEM64 family protein
+WP_002469559.1,SignalP,antiholin-like murein hydrolase modulator LrgA
+WP_002469568.1,SignalP,heme o synthase
+WP_002469574.1,SignalP,protoporphyrinogen oxidase
+WP_002470121.1,SignalP,membrane protein insertase YidC
+WP_002470142.1,SignalP,ABC transporter permease
+WP_002470194.1,SignalP,RNA degradosome polyphosphate kinase
+WP_002470226.1,SignalP,carbamoyl phosphate synthase small subunit
+WP_002470248.1,SignalP,nucleotidyltransferase
+WP_002470562.1,SignalP,hypothetical protein
+WP_002470683.1,SignalP,EVE domain-containing protein
+WP_002484563.1,SignalP,hypothiocyanous acid reductase MerA
+WP_002484649.1,SignalP,6-carboxyhexanoate--CoA ligase
+WP_002484860.1,SignalP,YjiH family protein
+WP_002485010.1,SignalP,YjjG family noncanonical pyrimidine nucleotidase
+WP_002485130.1,SignalP,carbohydrate kinase family protein
+WP_002485250.1,SignalP+DeepLocPro,nitric oxide synthase oxygenase
+WP_002485267.1,SignalP,hypothetical protein
+WP_002485333.1,SignalP,phosphoribosylamine--glycine ligase
+WP_002485357.1,SignalP,persulfide dioxygenase-sulfurtransferase CstB
+WP_002485371.1,SignalP,alpha/beta hydrolase fold domain-containing protein
+WP_002485488.1,SignalP,peptide-methionine (S)-S-oxide reductase
+WP_002485909.1,SignalP,50S ribosomal protein L24
+WP_002486052.1,SignalP,5-(carboxyamino)imidazole ribonucleotide synthase
+WP_002486053.1,SignalP,5-(carboxyamino)imidazole ribonucleotide mutase
+WP_002486058.1,SignalP,ABC transporter substrate-binding protein
+WP_002486059.1,SignalP,YkyA family protein
+WP_002486191.1,SignalP,PLP-dependent transferase
+WP_002486205.1,SignalP,class I SAM-dependent methyltransferase
+WP_002486299.1,SignalP,FtsW/RodA/SpoVE family cell cycle protein
+WP_002487683.1,SignalP,"1,4-dihydroxy-2-naphthoyl-CoA hydrolase MenI"
+WP_002489230.1,SignalP,energy-coupling factor transporter transmembrane component T family protein
+WP_002489284.1,SignalP,urease accessory protein UreF
+WP_002489582.1,SignalP,hypothetical protein
+WP_002489667.1,SignalP,DNA topoisomerase III
+WP_002489694.1,SignalP,hemolysin family protein
+WP_002489695.1,SignalP,FUSC family protein
+WP_002489699.1,SignalP,pyridoxamine 5'-phosphate oxidase family protein
+WP_002489706.1,SignalP,APC family permease
+WP_002489712.1,SignalP,NAD(P)H-binding protein
+WP_002489726.1,SignalP,thiol reductant ABC exporter subunit CydC
+WP_002489727.1,SignalP,SLC13 family permease
+WP_002489729.1,SignalP,YhgE/Pip domain-containing protein
+WP_002489738.1,SignalP,phosphate/phosphite/phosphonate ABC transporter substrate-binding protein
+WP_002489756.1,SignalP,CAP-associated domain-containing protein
+WP_002489776.1,SignalP,MFS transporter
+WP_002489851.1,SignalP,ABC transporter ATP-binding protein
+WP_002489904.1,SignalP,sodium/proline symporter PutP
+WP_002489909.1,SignalP,hypothetical protein
+WP_002489913.1,SignalP,hypothetical protein
+WP_002493287.1,SignalP,"L-serine ammonia-lyase, iron-sulfur-dependent subunit beta"
+WP_002493319.1,SignalP+DeepLocPro,copper resistance CopC family protein
+WP_002494032.1,SignalP,3-keto-5-aminohexanoate cleavage protein
+WP_002494082.1,SignalP+DeepLocPro,delta-hemolysin
+WP_002494334.1,SignalP,DUF423 domain-containing protein
+WP_002494490.1,SignalP,hypothetical protein
+WP_002494500.1,SignalP,metallophosphoesterase
+WP_002494680.1,SignalP,putative copper chaperone CsoZ
+WP_002502543.1,SignalP,alpha/beta hydrolase
+WP_002505142.1,SignalP,tandem-type lipoprotein
+WP_002505813.1,SignalP,phosphatase PAP2 family protein
+WP_011274426.1,SignalP,ABC transporter permease
+WP_018113891.1,SignalP,CPBP family lipoprotein N-acylation protein LnsB
+WP_021298777.1,SignalP,glycosyltransferase
+WP_025987120.1,SignalP+DeepLocPro,YSIRK domain-containing triacylglycerol lipase GehD
+WP_025987217.1,SignalP,DUF4176 domain-containing protein
+WP_031796873.1,SignalP,hypothetical protein
+WP_032603497.1,SignalP,MerR family transcriptional regulator
+WP_032604336.1,SignalP,SAUGI family uracil-DNA glycosylase inhibitor
+WP_049374229.1,SignalP,dihydrolipoyl dehydrogenase
+WP_049387483.1,SignalP,serine hydrolase domain-containing protein
+WP_049387488.1,SignalP,tetratricopeptide repeat protein
+WP_049387500.1,SignalP,hypothetical protein
+WP_049387501.1,SignalP,cation diffusion facilitator family transporter
+WP_049387519.1,SignalP,hypothetical protein
+WP_049387528.1,SignalP+DeepLocPro,hypothetical protein
+WP_049387541.1,SignalP,lactose-specific PTS transporter subunit EIIC
+WP_049387542.1,SignalP,tagatose-6-phosphate kinase
+WP_054828579.1,SignalP,phosphopentomutase
+WP_057504631.1,SignalP,hypothetical protein
+WP_057504646.1,SignalP,hypothetical protein
+WP_057504659.1,SignalP,ArsR/SmtB family transcription factor
+WP_078069838.1,SignalP+DeepLocPro,McrB family protein
+WP_079993579.1,SignalP+DeepLocPro,C39 family peptidase
+WP_080356281.1,SignalP,GNAT family N-acetyltransferase
+WP_083553768.1,SignalP,cassette chromosome recombinase CcrC
+WP_083553772.1,SignalP+DeepLocPro,nucleotidyltransferase domain-containing protein
+WP_087587975.1,SignalP+DeepLocPro,phenol-soluble modulin PSM-delta
+WP_095658922.1,SignalP+DeepLocPro,epsilon family phenol-soluble modulin
+WP_096824640.1,SignalP+DeepLocPro,alpha-1/alpha-2 family phenol-soluble modulin
+WP_100214577.1,SignalP,peptide chain release factor 2
+WP_100214577.1,SignalP,peptide chain release factor 2
+WP_134943506.1,SignalP,IS1182-like element ISSep1 family transposase
+WP_138936982.1,SignalP,IS1182-like element ISSep1 family transposase
+WP_138936983.1,SignalP,IS1182-like element ISSep1 family transposase
+WP_138936986.1,SignalP,IS1182-like element ISSep1 family transposase
+WP_161800868.1,SignalP,"phosphonate ABC transporter, permease protein PhnE"
+WP_164071529.1,SignalP,signal peptidase II
+WP_224479693.1,SignalP,PTS sugar transporter subunit IIC
+WP_225973519.1,SignalP,hypothetical protein
+WP_225973520.1,SignalP,hypothetical protein
+WP_232602350.1,SignalP,CPBP family intramembrane glutamic endopeptidase
+WP_244307884.1,SignalP,hypothetical protein
+WP_256647372.1,SignalP,hypothetical protein
+WP_306532126.1,SignalP,LysE/ArgO family amino acid transporter
+WP_000377077.1,DeepLocPro,hypothetical protein
+WP_001137495.1,DeepLocPro,30S ribosomal protein S7
+WP_001551935.1,DeepLocPro,hypothetical protein
+WP_001829330.1,DeepLocPro,hypothetical protein
+WP_001829613.1,DeepLocPro,hypothetical protein
+WP_001829718.1,DeepLocPro,50S ribosomal protein L17
+WP_001829727.1,DeepLocPro,50S ribosomal protein L3
+WP_001829740.1,DeepLocPro,50S ribosomal protein L6
+WP_001829742.1,DeepLocPro,50S ribosomal protein L14
+WP_001829747.1,DeepLocPro,50S ribosomal protein L18
+WP_001829768.1,DeepLocPro,30S ribosomal protein S8
+WP_001829775.1,DeepLocPro,50S ribosomal protein L4
+WP_001829778.1,DeepLocPro,50S ribosomal protein L5
+WP_001829788.1,DeepLocPro,50S ribosomal protein L2
+WP_001829791.1,DeepLocPro,30S ribosomal protein S3
+WP_001829796.1,DeepLocPro,50S ribosomal protein L15
+WP_001830798.1,DeepLocPro,30S ribosomal protein S4
+WP_001830839.1,DeepLocPro,50S ribosomal protein L20
+WP_001831003.1,DeepLocPro,hypothetical protein
+WP_001831516.1,DeepLocPro,YbgA family protein
+WP_001832147.1,DeepLocPro,sigS mRNA-stabilizing protein SroA
+WP_002437878.1,DeepLocPro,accessory Sec system protein Asp3
+WP_002438111.1,DeepLocPro,PTS beta-glucoside transporter
+WP_002438395.1,DeepLocPro,hypothetical protein
+WP_002438726.1,DeepLocPro,C1q-binding complement inhibitor VraX
+WP_002439708.1,DeepLocPro,regulatory protein MsaA
+WP_002456423.1,DeepLocPro,hypothetical protein
+WP_002456553.1,DeepLocPro,minor capsid protein
+WP_002456695.1,DeepLocPro,hypothetical protein
+WP_002457082.1,DeepLocPro,glycosyl hydrolase family 28-related protein
+WP_002469355.1,DeepLocPro,50S ribosomal protein L13
+WP_002489903.1,DeepLocPro,hypothetical protein
+WP_002495357.1,DeepLocPro,hypothetical protein
+WP_011274427.1,DeepLocPro,DUF2357 domain-containing protein
+WP_054828570.1,DeepLocPro,50S ribosomal protein L19
+WP_057504645.1,DeepLocPro,MobA/MobL family protein

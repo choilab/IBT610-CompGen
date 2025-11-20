@@ -28,6 +28,8 @@ Selecting the lower assembly level (e.g. chromosome, scaffold), the number of ge
 
 The 272 Refseq genomes of *S.epidermidis* are downloaded
 
+(2025/10/16)
+
 # Genome Selection Project: ANI-based Filtering (272 -> 124 genomes)
 
 **Project Goal:** To filter a set of 272 genomes based on Average Nucleotide Identity (ANI) to remove duplicates or highly similar strains, resulting in a representative set of 124 genomes.
@@ -304,4 +306,5 @@ python create_ani_heatmap.py
 ```
 
 This will produce the final image file named `ANI_heatmap_124.png`.
-![ANI Heatmap (124 Representative Genomes)](./ANI_heatmap_124.png)
+<img width="673" height="606" alt="image" src="https://github.com/user-attachments/assets/9bb7e742-5f41-4983-96a3-e90126223aa9" />
+(2025/10/30)
