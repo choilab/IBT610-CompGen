@@ -2,7 +2,6 @@
 
 > **Project Duration:** 2025.10.16 ~ 2025.11.27 (Current)  
 > **Target:** *Lactiplantibacillus plantarum* Representative Genomes  
-> **Principal Investigator:** [Your Name]
 
 ## 📖 Project Overview
 본 프로젝트는 NCBI 데이터베이스에 등록된 방대한 *L. plantarum* 유전체 데이터를 정제하여 **대표 유전체(Representative Genomes)**를 선별하고, 이들의 **Pangenome(범유전체)** 구조와 숙주 상호작용에 핵심적인 **Surfaceome(표면 단백질체)**을 규명하는 것을 목표로 합니다.
