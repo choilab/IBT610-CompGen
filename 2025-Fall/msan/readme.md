@@ -38,10 +38,7 @@ NCBI Assembly Database에서 *Lactobacillus* 속 전체에 대한 통계를 확�
     - ANI 99.9% 기준 적용 시: **214개 그룹** 형성 (최종 선택).
     - *참고: SKANI 100% 기준 적용 시 195개 그룹 형성.*
 
-![FastANI Heatmap](images/fastANI_heatmap.png)
-*(위: 359개 전체 균주의 ANI 히트맵, 중복된 붉은 영역(100%)이 다수 존재함)*
-
----
+https://github.com/igchoi/IBT610-CompGen/blob/main/2025-Fall/msan/result/fastani_heatmap_99.5-100.0.png
 
 ### 4. Pipeline Development (2025.11.13)
 **"AAI 및 cgMLST 분석 환경 구축"**
