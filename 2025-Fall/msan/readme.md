@@ -72,15 +72,15 @@ NCBI Assembly Database에서 *Lactobacillus* 속 전체에 대한 통계를 확�
 
 #### A. Pangenome Expansion (Heaps' Law)
 유전체 수가 늘어날수록 신규 유전자가 계속 발견되는 **Open Pangenome** ($\lambda = 0.366$) 특성을 확인했습니다.
-![Heaps Law](images/02_heaps_law.png)
+![[Heaps Law](2025-Fall/msan/result/02_heaps_law.png)](https://github.com/igchoi/IBT610-CompGen/blob/main/2025-Fall/msan/result/02_heaps_law.png)
 
 #### B. Phylogenetic Clustering (Mash)
 Mash distance 기반의 계통수를 통해 214개 균주 간의 유전적 거리를 시각화했습니다.
-![Mash Clustering](images/03_mash_clustering.png)
+![[Mash Clustering](images/03_mash_clustering.png)](https://github.com/igchoi/IBT610-CompGen/blob/main/2025-Fall/msan/result/03_mash_clustering.png)
 
 #### C. Surfaceome Prediction
 SignalP 및 TMHMM 로직을 적용하여 세포 표면 단백질(Secreted, Membrane, Cell wall)을 예측하고, CAR(Core/Accessory/Rare) 카테고리별 분포를 분석했습니다.
-![Surfaceome](images/05_surfaceome.png)
+![[Surfaceome](images/05_surfaceome.png)](https://github.com/igchoi/IBT610-CompGen/blob/main/2025-Fall/msan/result/05_surfaceome.png)
 
 ---
 
