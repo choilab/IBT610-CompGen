@@ -74,7 +74,7 @@ https://github.com/igchoi/IBT610-CompGen/blob/main/2025-Fall/msan/result/fastani
 Mash distance 기반의 계통수를 통해 214개 균주 간의 유전적 거리를 시각화했습니다.
 ![[Mash Clustering](images/03_mash_clustering.png)](https://github.com/igchoi/IBT610-CompGen/blob/main/2025-Fall/msan/result/03_mash_clustering.png)
 
-#### C. Surfaceome Prediction
+#### C. Surfaceome Prediction (signalip + HMM을 사용하여 업데이트 예정)
 SignalP 및 TMHMM 로직을 적용하여 세포 표면 단백질(Secreted, Membrane, Cell wall)을 예측하고, CAR(Core/Accessory/Rare) 카테고리별 분포를 분석했습니다.
 ![[Surfaceome](images/05_surfaceome.png)](https://github.com/igchoi/IBT610-CompGen/blob/main/2025-Fall/msan/result/05_surfaceome.png)
 
