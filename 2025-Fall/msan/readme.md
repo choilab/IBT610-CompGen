@@ -74,11 +74,94 @@ https://github.com/igchoi/IBT610-CompGen/blob/main/2025-Fall/msan/result/fastani
 Mash distance 기반의 계통수를 통해 214개 균주 간의 유전적 거리를 시각화했습니다.
 ![[Mash Clustering](images/03_mash_clustering.png)](https://github.com/igchoi/IBT610-CompGen/blob/main/2025-Fall/msan/result/03_mash_clustering.png)
 
-#### C. Surfaceome Prediction (SignalP + TMHMM으로 재분석을 사용하여 업데이트 예정)
+#### C. Surfaceome Prediction (SignalP + TMHMM으로 재분석을 사용하여 업데이트 예정)(데이터 삭제 예정)
 SignalP 및 TMHMM 로직을 적용하여 세포 표면 단백질(Secreted, Membrane, Cell wall)을 예측하고, CAR(Core/Accessory/Rare) 카테고리별 분포를 분석했습니다.
 ![[Surfaceome](images/05_surfaceome.png)](https://github.com/igchoi/IBT610-CompGen/blob/main/2025-Fall/msan/result/05_surfaceome.png)
 
 ---
+
+cat << 'EOF' > ~/quality_control_analysis_kr.md
+# Pangenome 품질 관리 및 Surfaceome 분석
+
+## 📋 개요
+
+본 문서는 세균 유전체 데이터에 대한 품질 관리 파이프라인과 Surfaceome/Secretome 분석 과정을 설명합니다.
+
+---
+
+## 1. 데이터 품질 관리 (Data Quality Control)
+
+유전체 데이터의 기술적 오류를 배제하고 생물학적 유의성을 높이기 위해 추가적인 **이상치 탐지(Outlier Detection)** 작업을 수행했습니다.
+
+### 🔹 1.1 FASTA 품질 검사 및 필터링
+
+| 단계 | 설명 |
+|------|------|
+| **문제 식별** | 초기 데이터셋에 전체 시퀀스가 병합된 파일(`combined_all`) 및 품질 저하 샘플 포함 확인 |
+| **기준 적용** | 서열 수 및 길이 분포 분석 후 평균에서 **±2 표준편차(SD)** 벗어나는 샘플 식별 및 제거 |
+
+#### 분석된 품질 지표:
+- 샘플당 서열 수
+- 평균 서열 길이
+- 길이 분포 패턴
+
+### 🔹 1.2 Roary 이상치 제거
+
+**검증**: Gene Presence/Absence 매트릭스에서 유전자 수가 비정상적으로 적거나 많은 **샘플 9개 제거**.
+
+#### 결과 요약 (198 → 189 균주):
+
+| 지표 | 제거 전 | 제거 후 | 변화 |
+|------|---------|---------|------|
+| 총 샘플 수 | 198 | 189 | -9 |
+| Core Genes (100%) | 1,173 | 1,223 | **+50** |
+| Pangenome 견고성 | - | - | ✅ 향상 |
+
+#### 주요 발견:
+- ✅ 이상치 제거 후 Core gene 수가 **50개 증가**
+- ✅ 클러스터링 히트맵 분석 결과, 노이즈 제거로 **균주 간 패턴이 명확해짐**
+- ✅ **Pangenome 견고성(Robustness) 향상** 확인
+
+![Fasta Group Analysis](https://raw.githubusercontent.com/igchoi/IBT610-CompGen/main/2025-Fall/msan/result/06_fasta_group_analysis.png)
+
+![Fasta Group Heatmap](https://raw.githubusercontent.com/igchoi/IBT610-CompGen/main/2025-Fall/msan/result/07_fasta_group_heatmap.png)
+
+---
+
+## 2. Surfaceome 및 Secretome 분석
+
+숙주 상호작용의 핵심 인자인 **'세포 밖으로 분비되는 단백질(Secretome)'**을 선별하기 위해 구조 예측 파이프라인을 구축했습니다.
+
+### 🔧 사용 도구
+
+| 도구 | 버전 | 목적 |
+|------|------|------|
+| **SignalP** | 6.0 | 신호 펩타이드 예측 |
+| **TMHMM** | 2.0 | 막관통 헬릭스 예측 |
+
+
+# Secretome 선별 의사 코드
+분비_단백질 = 단백질.필터(
+    (SignalP_예측 != "OTHER") &  # 신호 펩타이드 보유
+    (TMHMM_헬릭스 == 0)          # 막관통 도메인 없음
+)
+
+🔹 2.3 최종 결과
+출력물	설명
+📂 Final_Secreted_Proteins.xlsx	선별된 분비 단백질 목록
+📊 Secretome_Heatmap.png	균주별 분비 단백질 분포 히트맵
+통계:
+범주	수량	비율
+분석된 전체 CDS	~655,000	100%
+신호 펩타이드 양성	32,653	~5%
+최종 분비 단백질 (SP+ & TM-)	TBD	-
+
+![Type Distribution Bar](https://raw.githubusercontent.com/igchoi/IBT610-CompGen/main/2025-Fall/msan/result/02_Type_Distribution_Bar.png)
+![Signal Peptide Presence](https://raw.githubusercontent.com/igchoi/IBT610-CompGen/main/2025-Fall/msan/result/03_Signal_Peptide_Presence.png)
+
+## Next plan
+- Core/Accessory/Rare 기능 분석 
+- Clade별 Secretome/Surfaceome 패턴
 
 ## 💻 Reproducibility (How to Run)
 
@@ -92,3 +175,5 @@ SignalP 및 TMHMM 로직을 적용하여 세포 표면 단백질(Secreted, Membr
 ├── Result_sample/        # Genome assemblies (.fna)
 ├── Prokka_gbk/           # GenBank files
 └── output_12600k_4060_v2/# (Created automatically)
+
+
