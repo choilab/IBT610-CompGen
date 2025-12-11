@@ -64,9 +64,6 @@
 - 95% 미만 빈도 유전자를 모두 accessory로 정의(shell + cloud)  
 ➡️ 이 accessory genome이 **phylogroup clustering의 주요 feature**가 된다.  
 
-## 2.4 EggNOG Functional Annotation  
-Accessory gene 리스트를 EggNOG-mapper 결과와 병합하여 **각 유전자의 COG category** 확보.
-
 ---
 
 # 3. 🔬 Functional Categorization of Accessory Genes
