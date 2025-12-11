@@ -28,16 +28,14 @@
 - NCBI에서 **총 155개 genome** 다운로드  
 - 이후 모든 분석의 품질을 보장하기 위해 ANI 기반 genome filtering 수행  
 
-## 1.2 Pairwise ANI Processing  
-- Pairwise ANI/AAI 계산 → 중복 제거  
-- Outlier(AP017974.1) 탐지  
-- NCBI “Complete” 수준만 유지 → **최종 81개 strain** 확정  
 
-## 1.3 ANI Heatmap   
+## 1.2 Pairwise ANI Processing and ANI Heatmap   
 <img width="3600" height="3000" alt="ani_heatmap" src="https://github.com/user-attachments/assets/12dec12e-fa07-4ee5-b7c0-6763e4dad9fe" />
 
 - 155개 전체 Heatmap으로 계통적 패턴 및 outlier 시각적 확인  
-- Filtering 후 81개의 균주가 더 응집된 패턴을 형성함  
+- Pairwise ANI/AAI 계산 → 중복 제거  
+- Outlier(AP017974.1) 탐지  
+- NCBI “Complete” 수준만 유지 → **최종 81개 strain** 확정   
 
 ---
 
@@ -91,6 +89,8 @@ Accessory gene에 대해 EggNOG 기반 COG 주석을 수행하고,
 
 ##  4.1 Pre-processing: Removal of CP033371.1 Prior to H35 Phylogrouping
 
+<img width="1920" height="912" alt="image" src="https://github.com/user-attachments/assets/3cd9a848-692d-4cfd-93f9-8cf1a2c3e972" />
+
 Accessory genome 기반 phylogrouping을 수행하기 전에,  
 **CP033371.1이 트리에서 지나치게 긴 단독 branch를 형성하는 extreme outlier**임을 확인하였다.
 
@@ -128,6 +128,9 @@ strain별 C/G/E functional count를 매핑하여 **계통 구조–기능 연관
 
 Strain-level C/G/E count 비교 결과, CP076082.1은 GROUP1 대비 다음과 같은 특징을 보였다.
 
+<img width="3000" height="1800" alt="CP0760821_CGE_boxplot_zscore" src="https://github.com/user-attachments/assets/1946ddf9-9e7f-4455-86d0-dd30c4215e11" />
+
+
 - **C:** GROUP1과 유사  
 - **G:** 경미한 감소  
 - **E:** GROUP1에서 유일하게 **크게 감소 ⬇️**
@@ -137,6 +140,7 @@ Strain-level C/G/E count 비교 결과, CP076082.1은 GROUP1 대비 다음과 �
 ---
 
 ## 🧭 5.2 PCA Analysis: E Category Drives the Separation
+
 <img width="2400" height="1800" alt="GROUP1_only_CGE_PCA_plot" src="https://github.com/user-attachments/assets/71875945-e470-49ef-a1cd-72e3392d0920" />
 
 C/G/E matrix 기반 PCA 결과:
