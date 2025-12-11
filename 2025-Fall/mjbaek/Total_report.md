@@ -141,12 +141,14 @@ Strain-level C/G/E count 비교 결과, CP076082.1은 GROUP1 대비 다음과 �
 
 ## 🧭 5.2 PCA Analysis: E Category Drives the Separation
 
+ Strain별 C/G/E category count 파일로 변수(C/G/E)를 하나의 좌표축으로 축약해서, 서로 다른 strain들이 기능적으로 얼마나 비슷하거나 다른지를 시각화하는 PCA 분석 후 plot으로 나타내었다.
+
 <img width="2400" height="1800" alt="GROUP1_only_CGE_PCA_plot" src="https://github.com/user-attachments/assets/71875945-e470-49ef-a1cd-72e3392d0920" />
 
 C/G/E matrix 기반 PCA 결과:
 
 - CP076082.1은 GROUP1 중심 cluster에서 벗어난 외곽 위치  
-- **PC1·PC2 loading 분석에서 E category가 분리를 결정하는 핵심 요소**
+- **PC1·PC2 loading 분석(GROUP1_only_CGE_PCA_scores 파일)으로 봤을 때, E category가 분리를 결정하는 핵심 요소**
 
 → **E 기능 감소가 분리의 직접 원인**임을 통계적으로 확인하였다.
 
@@ -154,9 +156,9 @@ C/G/E matrix 기반 PCA 결과:
 
 ## 🧬 5.3 Accessory Genome Composition  
 ### (1) Major Loss of E-Category Pathways
-
-GROUP1 strain의 80% 이상이 공통 보유하는 accessory gene 중,  
-CP076082.1에서만 결손된 기능성 경로는 다음과 같다.
+ 또한, 해당 strain만 가지고 있는 유전자, 아닌 유전자가 어떤 것이고, E 카테고리와 관련이 있는지 확인하기 위해 accessory_presence_absence_renamed.tsv 파일에서 악세사리 중의 악세사리 유전자를 탐색했다.
+ 
+GROUP1 strain의 80% 이상이 공통 보유하는 accessory gene 중, CP076082.1에서만 결손된 기능성 경로는 다음과 같다.
 
 - his-operon (hisA/B/C/D/G/H/Z/K): 히스티딘 생합성 전체  
 - 메티오닌 대사 경로 (metI, metB, metE)  
