@@ -13,7 +13,7 @@
 ## 🎯 Objective  
 본 분석에서는 다음을 목표로 한다:
 
-1. **145 → ANI filtering → 81개**의 high-quality genome 기반 pan-genome 구축  
+1. **155 → ANI filtering → 81개**의 high-quality genome 기반 pan-genome 구축  
 2. Accessory gene 기반 phylogroup 정의  
 3. 각 그룹 간 COG(C/E/G) 기능 차이를 평가  
 4. Outlier strain 분석을 통해 특정 COG의 결손이 phylogroup 패턴을 설명하는지 검증  
@@ -33,7 +33,7 @@
 - Outlier(AP017974.1) 탐지  
 - NCBI “Complete” 수준만 유지 → **최종 81개 strain** 확정  
 
-## 1.3 ANI Heatmap (📊 위치 제안: Filtering 근거 제공)  
+## 1.3 ANI Heatmap   
 - 155개 전체 Heatmap으로 계통적 패턴 및 outlier 시각적 확인  
 - Filtering 후 81개의 균주가 더 응집된 패턴을 형성함  
 
