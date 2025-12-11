@@ -34,6 +34,7 @@
 - NCBI “Complete” 수준만 유지 → **최종 81개 strain** 확정  
 
 ## 1.3 ANI Heatmap   
+![Figure 1. ANI heatmap](<img width="3600" height="3000" alt="ani_heatmap" src="https://github.com/user-attachments/assets/1f968897-2e1b-42ef-9976-d4cc64cb7f68" />)
 - 155개 전체 Heatmap으로 계통적 패턴 및 outlier 시각적 확인  
 - Filtering 후 81개의 균주가 더 응집된 패턴을 형성함  
 
