@@ -180,6 +180,9 @@ CP076082.1 전용 unique accessory gene에서는 특정 carbon source 활용을 
 
 ## 📌 6.1 Chi-square Test: Group-level Total Counts
 
+<img width="40%" alt="cog_group_counts_h35_heatmap" src="https://github.com/user-attachments/assets/d024d185-b164-4468-a3b6-d5caefd101eb" />
+
+
 phylogroup 간 **C/G/E total gene count** 동일성 검정:
 
 - **C:** p ≈ 1.2e⁻²⁷⁶  
