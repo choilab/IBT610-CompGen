@@ -123,6 +123,9 @@ Explored key survival strategies in pathogenic strains by examining auxotrophy m
    
 4.  **iTOL Integration**
     * **Combined Plot:** Tree + Heatmap + Bar chart
+   
+   Strains with a red background represent MRSE, while those with a green background represent MSSE. Strains harboring bacteriocins are indicated by blue rings. The virulence index is displayed in the form of bar graphs.
+Although no strains in the ST-2 group carried bacteriocin genes, they exhibited an average risk score above 13, indicating that they are potentially hazardous.
     <img width="1163" height="1089" alt="image" src="https://github.com/user-attachments/assets/1bc07aa0-6045-476b-a755-03351934f1d6" />
 
     
