@@ -88,157 +88,145 @@ Accessory gene에 대해 EggNOG 기반 COG 주석을 수행하고,
 
 ---
 
-# 4. Accessory Genome–Based Phylogrouping and Functional Interpretation
-## 4.1 Pre-processing: Removal of CP033371.1 Prior to H35 Phylogrouping
+# 🌐 4. Accessory Genome–Based Phylogrouping and Functional Interpretation
 
-Accessory genome 기반 phylogrouping을 진행하기에 앞서,  
-**CP033371.1은 트리에서 지나치게 긴 단독 branch를 형성하는 extreme outlier**로 나타났다.
+## ⚠️ 4.1 Pre-processing: Removal of CP033371.1 Prior to H35 Phylogrouping
 
-- ANI 분석에서는 이상이 없었으나,  
-- Roary 단계에서 gene clustering 혹은 annotation mismatch가 발생한 것으로 추정되며,  
-- 이로 인해 **전체 그룹 내 통계 분석(H35 분할 포함)을 왜곡할 수준의 비정상적 거리값**을 보였다.
+Accessory genome 기반 phylogrouping을 수행하기 전에,  
+**CP033371.1이 트리에서 지나치게 긴 단독 branch를 형성하는 extreme outlier**임을 확인하였다.
 
-따라서 downstream 분석의 정확성을 유지하기 위해  
-**CP033371.1은 사전에 제외하고, 총 80개의 strain을 기준으로 H35 phylogrouping 및 후속 C/G/E 통계 분석을 수행하였다.**
+- ANI 분석에서는 이상 없음  
+- Roary 단계에서 gene clustering 혹은 annotation mismatch 가능성  
+- 이로 인해 **거리 기반 분석(H35 분할 포함)을 왜곡할 정도의 비정상적 값** 생성
 
----
-
-## 4.2 phylogenetic tree
-Accessory 유전자 조성은 strain 간 변동성이 높기 때문에, **H35 threshold는 가장 안정적으로 phylogroup이 분해되는 cutoff**로 판단되어 본 연구의 tree construction에 사용되었다.
-Accessory gene presence/absence 정보를 기반으로 phylogenetic tree를 구성하였고, 여기에 strain별 C/G/E functional count를 매핑하여 계통 구조와 기능적 특성의 연관성을 평가하였다.
-
-이 분석에서 두 가지 핵심 관찰이 나타났다:
-
-1. **CP076082.1이 동일 phylogroup(GROUP1) 내에서 외곽 branch에 위치하는 outlier로 확인됨**
-2. **Tree 상 각 구역에서 C/G/E functional profile이 서로 다른 패턴을 나타냄**
-
-이러한 분리 현상이 단순 계통학적 요인인지, 실제 기능적 조성 차이에 기반한 것인지 확인하기 위해 후속 분석을 수행하였다.
+따라서 downstream 분석의 정확성을 위해  
+**CP033371.1을 제외하고 총 80 strain 기준으로 H35 phylogrouping 및 후속 C/G/E 분석을 수행하였다.**
 
 ---
 
-# 5. Functional Divergence Analysis of CP076082.1
+## 🌳 4.2 Phylogenetic Tree
 
-## 5.1 C/G/E Functional Profile: Selective Reduction in Category E
-Strain-level C/G/E category count 비교 결과, CP076082.1은 GROUP1 평균 대비 다음과 같은 특징을 보였다.
+Accessory 유전자 조성은 변동성이 크므로,  
+**H35 threshold가 가장 안정적으로 phylogroup을 분해하는 cutoff**로 판단되었다.
 
-- **C (Energy production & conversion):** GROUP1과 유사  
-- **G (Carbohydrate transport & metabolism):** 경미한 감소  
-- **E (Amino acid/carbohydrate-associated metabolism):** GROUP1에서 유일하게 **크게 감소**
+Accessory gene presence/absence 기반 phylogenetic tree를 구성하고,  
+strain별 C/G/E functional count를 매핑하여 **계통 구조–기능 연관성**을 평가하였다.
 
-즉, CP076082.1은 C/G 기반 발효 기능은 유지하면서도 **E category 기능만 선택적으로 약화**된 기능적 이탈형임이 확인되었다. 이는 phylogroup tree에서 중심 cluster로부터 멀어진 패턴과 일치한다.
+### 🔎 주요 관찰
+1. **CP076082.1이 GROUP1 내부에서도 외곽 branch에 위치하는 outlier로 확인됨**  
+2. Tree 구역별 **C/G/E functional profile이 상이한 패턴을 보임**
 
----
-
-## 5.2 PCA Analysis: E Category Drives the Separation
-C/G/E matrix에 대한 PCA에서도 CP076082.1은 GROUP1 cluster 중심에서 벗어난 외곽 위치를 차지했다.  
-PC1·PC2 loading 분석 결과 **E category 유전자군이 분리를 결정하는 가장 큰 요소**로 기여하였다.
-
-따라서 CP076082.1이 phylogroup에서 분리된 직접적 요인은 E 기능 감소임이 통계적으로도 확인되었다.
+이 현상이 계통학적 요인인지 실제 기능 조성 차이인지 확인하기 위해 후속 분석을 수행하였다.
 
 ---
 
-## 5.3 Accessory Genome Composition: Loss of Core E Pathways + Acquisition of Unique Transporters
+# 🔬 5. Functional Divergence Analysis of CP076082.1
 
-### (1) Major Loss of E-Category Pathways  
-GROUP1의 80% 이상이 공통 보유하는 accessory gene 중, CP076082.1에서만 결손된 기능성 경로는 다음과 같다.
+## 📉 5.1 C/G/E Functional Profile: Selective Reduction in Category E
 
-- his-operon (hisA/B/C/D/G/H/Z/K) — 히스티딘 생합성 전체 과정  
+Strain-level C/G/E count 비교 결과, CP076082.1은 GROUP1 대비 다음과 같은 특징을 보였다.
+
+- **C:** GROUP1과 유사  
+- **G:** 경미한 감소  
+- **E:** GROUP1에서 유일하게 **크게 감소 ⬇️**
+
+→ 즉, **CP076082.1은 E 기능만 선택적으로 약화된 기능적 이탈형**이며, 이는 tree 상의 분리와 일치한다.
+
+---
+
+## 🧭 5.2 PCA Analysis: E Category Drives the Separation
+
+C/G/E matrix 기반 PCA 결과:
+
+- CP076082.1은 GROUP1 중심 cluster에서 벗어난 외곽 위치  
+- **PC1·PC2 loading 분석에서 E category가 분리를 결정하는 핵심 요소**
+
+→ **E 기능 감소가 분리의 직접 원인**임을 통계적으로 확인하였다.
+
+---
+
+## 🧬 5.3 Accessory Genome Composition  
+### (1) ❗ Major Loss of E-Category Pathways
+
+GROUP1 strain의 80% 이상이 공통 보유하는 accessory gene 중,  
+CP076082.1에서만 결손된 기능성 경로는 다음과 같다.
+
+- his-operon (hisA/B/C/D/G/H/Z/K): 히스티딘 생합성 전체  
 - 메티오닌 대사 경로 (metI, metB, metE)  
-- 성장·번역 관련 요소 (lepA, tuf)  
+- 성장·번역 관련 요소 (lepA, tuf)
 
-→ 이는 E category 감소가 단순 count 변화가 아니라 **핵심 경로 수준의 실제 결손**임을 의미한다.
+→ 단순한 count 감소가 아니라 **핵심 대사 경로 단위의 실제 기능 결손**임을 의미한다.
 
-### (2) Acquisition of Unique Transporters  
-반대로 CP076082.1에서만 등장하는 unique accessory gene 분석 결과, 특정 carbohydrate utilization을 강화하는 transporter가 확인되었다.
+### (2) 🚚 Acquisition of Unique Transporters
+
+CP076082.1 전용 unique accessory gene에서는 특정 carbon source 활용을 강화하는 transporter들이 확인되었다.
 
 - malK — maltose transporter  
 - ugpA — G3P transporter  
 - araQ — arabinose transporter/regulator  
 
-→ 이는 E category 약화와 동시에 **특정 carbon source 중심으로 niche-specialized 재구성**이 일어났음을 시사한다.
+→ **E 기능 약화와 동시에 niche-specialized carbon metabolism 재구성**이 일어났음을 시사한다.
 
 ---
 
-# 6. Statistical Evaluation of C/G/E Functional Differences Between Groups
+# 📊 6. Statistical Evaluation of C/G/E Functional Differences Between Groups
 
-앞서 phylogenetic tree 시각화에서 확인된 **(2) C/G/E functional pattern의 그룹 간 차이**가  
-실제 통계적으로 유의한지 확인하기 위해 세 단계의 검정을 수행하였다.
+## 📌 6.1 Chi-square Test: Group-level Total Counts
 
----
-
-## 6.1 Chi-square Test: Group-level Total Counts
-각 phylogroup이 보유한 **C/G/E total gene count** 분포가 동일한지 검정하였다.
+phylogroup 간 **C/G/E total gene count** 동일성 검정:
 
 - **C:** p ≈ 1.2e⁻²⁷⁶  
 - **G:** p ≈ 5.1e⁻²¹⁷  
-- **E:** p ≈ 매우 작음  
+- **E:** 매우 작음  
 
-→ 세 기능군 모두 그룹 간 total gene count 차이가 **강하게 유의**하였다.  
-→ 즉, phylogroup 간 분리는 accessory genome 구조뿐 아니라 **기능적 조성 차이**도 반영한다.
+→ 모든 기능군에서 **그룹 간 차이가 강하게 유의**하였다.
 
 ---
 
-## 6.2 Kruskal–Wallis Test: Strain-level Distribution
-각 strain의 C/G/E gene count 분포를 그룹 간 비교하였다.
+## 📌 6.2 Kruskal–Wallis Test: Strain-level Distribution
+
+strain-level C/G/E 분포 비교 결과:
 
 - **C:** p ≈ 6.4e⁻⁶  
 - **G:** p ≈ 3.6e⁻⁵  
 - **E:** p ≈ 3.7e⁻¹¹  
 
-→ strain-level에서도 그룹 간 분포 차이가 존재하였다.  
-→ 즉, functional differentiation은 **군집의 구조적 특성**이다.
+→ strain-level에서도 **그룹 간 차이가 유지**됨을 확인하였다.
 
 ---
 
-## 6.3 Fisher’s Exact Test: Genome-size–Adjusted Ratio Differences
-Group 간 accessory genome size가 서로 다르기 때문에,  
-단순 유전자 수 차이가 아닌 **비율 차이**가 유지되는지 Fisher 검정을 수행하였다.
+## 📌 6.3 Fisher’s Exact Test: Genome-size–Adjusted Ratio Differences
 
-- **Group 1:** OR = 1.297, p = 4.9e⁻20 → C/G/E 비율이 유의하게 **enriched**  
+Accessory genome size 차이를 보정한 비율 검정 결과:
+
+- **Group 1:** OR = 1.297, p = 4.9e⁻20 → **enriched ⬆️**  
 - **Group 2, 4, 5:** depleted  
-- **Group 3:** 중립  
+- **Group 3:** neutral  
 
-→ Genome size를 보정해도 C/G/E 비율 차이는 유지되었다.  
-→ 기능적 차이는 단순 genome size artifact가 아니라 **그룹 고유의 구조적 특성**임이 확인되었다.
-
----
-
-## Interpretation of the Three Tests
-세 단계의 통계 검정은 모두 일관된 결론을 지지한다.
-
-- **그룹 간 C/G/E total 수는 유의하게 다르며**,  
-- **strain-level에서도 분포가 다르고**,  
-- **genome size 보정 후에도 C/G/E 비율 차이는 유지된다.**
-
-이는 트리에서 관찰된 기능적 패턴(각 phylogroup의 distinct metabolic signature)이  
-단순 우연이나 데이터 artifact가 아니라,  
-**실제 biological differentiation**임을 강하게 뒷받침한다.
+→ 기능 차이는 genome size artifact가 아닌 **구조적 특성**임을 확인하였다.
 
 ---
 
-# 7. Integrated Conclusion
+# 🧩 7. Integrated Conclusion
 
-본 연구에서 얻은 두 축의 분석 결과—  
-① **H35 phylogroup 간 C/G/E 기능군의 유의미한 차이**,  
-② **동일 그룹 내 outlier(CP076082.1)의 기능·구조적 이탈 분석**—을 통합하면  
-다음 결론을 도출할 수 있다.
+본 연구의 두 축 분석 —  
+① **H35 phylogroup 간 C/G/E 기능 조성 차이**,  
+② **동일 그룹 내 outlier(CP076082.1)의 기능·구조 이탈 분석** — 을 종합하면 다음과 같다.
 
-1. **C/G/E 카테고리는 L. fermentum의 발효 대사를 규정하는 핵심 기능축**이며,  
-   phylogroup(H35) 간 이 기능군에서 통계적으로 유의한 차이가 존재한다.  
-   → 즉, accessory genome 기반 phylogroup은 단순한 유전자 조성 차이가 아니라,  
-     **발효 대사 기능 조합(functional signature)의 차이를 반영한다.**
+## ✨ 핵심 결론
 
-2. 동일 그룹 내 outlier(CP076082.1) 분석에서도  
-   **E category 감소 및 고유 transporter 획득이라는 기능적 재구성**이  
-   해당 strain이 phylogroup 중심에서 벗어난 원인임이 확인되었다.  
-   → 즉, **군집 분리 + outlier 형성 모두가 C/G/E 기능 변화와 직접적으로 연결**된다.
+1. **C/G/E 기능군은 L. fermentum의 발효 대사를 규정하는 핵심 functional axis이며,**  
+   phylogroup(H35) 간 이 축에서 통계적으로 유의한 차이가 존재한다.  
+   → 즉, accessory genome 기반 phylogroup은 단순 gene 조성 차이가 아니라  
+     **각 그룹의 고유한 발효 대사 signature**를 반영한다.
+
+2. **CP076082.1은 E category 핵심 경로 결손 + 특이 carbon transporter 획득이라는 재구성을 통해**  
+   동일 그룹 내에서도 기능적으로 이탈된 패턴을 보였다.  
+   → 즉, **군집 분리와 outlier 형성 모두가 C/G/E 기능축의 구조적 변화와 직접적으로 연결된다.**
 
 ---
 
-## Final Statement
-따라서 다음의 결론이 도출된다.
+# ⭐ Final Statement
 
-**“발효 관련 핵심 기능군(C/G/E)은 phylogroup을 구분하는 데 충분한 기능적 지표이며,  
-각 그룹은 서로 다른 발효 대사 signature를 가진다.  
-CP076082.1과 같은 outlier의 분리 또한 이러한 기능적 축의 재구성에서 기인한다.”**
-
+**“Accessory genome 기반 phylogroup은 L. fermentum의 발효 대사 signature를 명확히 구분하는 지표이며,  
+CP076082.1과 같은 outlier의 분리 또한 C/G/E 기능축 재구성으로 설명된다.”**
