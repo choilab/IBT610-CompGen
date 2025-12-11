@@ -146,7 +146,7 @@ C/G/E matrix 기반 PCA 결과:
 ---
 
 ## 🧬 5.3 Accessory Genome Composition  
-### (1) ❗ Major Loss of E-Category Pathways
+### (1) Major Loss of E-Category Pathways
 
 GROUP1 strain의 80% 이상이 공통 보유하는 accessory gene 중,  
 CP076082.1에서만 결손된 기능성 경로는 다음과 같다.
@@ -157,7 +157,7 @@ CP076082.1에서만 결손된 기능성 경로는 다음과 같다.
 
 → 단순한 count 감소가 아니라 **핵심 대사 경로 단위의 실제 기능 결손**임을 의미한다.
 
-### (2) 🚚 Acquisition of Unique Transporters
+### (2) Acquisition of Unique Transporters
 
 CP076082.1 전용 unique accessory gene에서는 특정 carbon source 활용을 강화하는 transporter들이 확인되었다.
 
