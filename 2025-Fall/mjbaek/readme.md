@@ -1,4 +1,7 @@
+# Lactobacillus fermentum Pan-Genome Analysis Report  
+### **Defining L. fermentum Phylogroups Through Accessory Gene Clustering and Functional COG Profiling**
 
+---
 
 # 📌 1. Introduction
 
@@ -37,9 +40,8 @@ Figure 2.와 같이 ANI 95% 미만 값을 보이는 종 내 이질적 균주 (�
   - [NCBI RefSeq *L. fermentum* genomes (FASTA)](https://www.ncbi.nlm.nih.gov/refseq/)
 - **Tool**:  
   - [fastANI](https://github.com/ParBLiSS/FastANI)
-- **Output**:  
-  - [final_81_strains.tsv](data/metadata/final_81_strains.tsv)  
-  - [ANI_matrix.tsv](data/metadata/ANI_matrix.tsv)
+- **Output**:   
+  - [ANI_matrix.tsv](https://github.com/minjBaek02/file_collection/blob/5fa516d39e5c16e8ae79d74fc3bd6a41baf088dc/%EA%B9%83%ED%97%88%EB%B8%8C%20%EC%97%85%EB%A1%9C%EB%93%9C%20%ED%8C%8C%EC%9D%BC/fastani_lactobacillus_fermentum_.matrix)
 
 ---
 
@@ -55,20 +57,42 @@ Accessory genome 기반 계통수에서 비정상적으로 긴 branch를 형성�
 
 **Workflow**  
 - **Input**:  
-  - [Final 81 genome FASTA](data/genomes/)
+  - [Final 81 genome FASTA]
 - **Tool**:  
   - [Prokka v1.14.6](https://github.com/tseemann/prokka)  
   - [Roary v3.13.0](https://github.com/sanger-pathogens/Roary)
 - **Output**:  
-  - [Prokka GFF / FAA](data/prokka/)  
-  - [gene_presence_absence.csv](data/roary/gene_presence_absence.csv)  
-  - [accessory_matrix_80strains.tsv](data/roary/accessory_matrix_80strains.tsv)
+  - [Prokka GFF / FAA]
+  - [gene_presence_absence.csv](https://github.com/minjBaek02/file_collection/blob/90180ecefe398d81ddba80568d430fc4c187ce96/%EA%B9%83%ED%97%88%EB%B8%8C%20%EC%97%85%EB%A1%9C%EB%93%9C%20%ED%8C%8C%EC%9D%BC/Galaxy1052-%5BRoary%20on%20data%201033%2C%20data%201021%2C%20and%20others%20Gene%20Presence%20Absence%5D.csv)  
+  - [accessory_matrix_80strains.tsv](https://github.com/minjBaek02/file_collection/blob/d6fbe99682eeba875db3a349534f11ef114b4562/%EA%B9%83%ED%97%88%EB%B8%8C%20%EC%97%85%EB%A1%9C%EB%93%9C%20%ED%8C%8C%EC%9D%BC/accessory_presence_absence_renamed.tsv)
 
 ---
 
-## 2.3 Functional Categorization (COG Profiling)
+## 2.3 Phylogrouping 
 
-Roary로부터 얻은 pan-genome 단백질 서열 집합(또는 Prokka FAA 전체 병합본)을 eggNOG-mapper v2.1.9에 입력하여 eggNOG 5.0 데이터베이스 기반의 기능 주석과 COG 카테고리를 할당하였다.
+Accessory genome 기반 phylogroup 정의를 위해 Roary에서 생성된 accessory gene 계통수 (`accessory_tree.nwk`)를 사용하였다.
+
+계통수 기반 거리 정보를 이용해 계층적 군집화를 수행하고, **cut height = 0.35** 기준으로 phylogroup을 정의하였다.  
+최종 phylogroup 정보는 [`phylogroup_h35.tsv`](https://github.com/minjBaek02/file_collection/blob/90180ecefe398d81ddba80568d430fc4c187ce96/%EA%B9%83%ED%97%88%EB%B8%8C%20%EC%97%85%EB%A1%9C%EB%93%9C%20%ED%8C%8C%EC%9D%BC/phylogroup_h35.tsv)로 정리하였다.
+
+**Workflow**  
+- **Input**:  
+  - [accessory_tree.nwk](https://github.com/minjBaek02/file_collection/blob/90180ecefe398d81ddba80568d430fc4c187ce96/%EA%B9%83%ED%97%88%EB%B8%8C%20%EC%97%85%EB%A1%9C%EB%93%9C%20%ED%8C%8C%EC%9D%BC/Accessory%20Binary%20Genes%20.Newick.nhx)
+- **Tool**:
+  - [iTOL (Interactive Tree Of Life)](https://itol.embl.de/)
+- **Output**:  
+  - [phylogroup_h35.tsv](https://github.com/minjBaek02/file_collection/blob/90180ecefe398d81ddba80568d430fc4c187ce96/%EA%B9%83%ED%97%88%EB%B8%8C%20%EC%97%85%EB%A1%9C%EB%93%9C%20%ED%8C%8C%EC%9D%BC/phylogroup_h35.tsv) 
+
+Accessory genome 기반 phylogrouping을 수행하기 전에, CP033371.1이 트리에서 지나치게 긴 단독 branch를 형성하는 extreme outlier임을 확인하였다. (ANI 분석에서는 이상 없음, Roary 단계에서 gene clustering 혹은 annotation mismatch 가능성)
+
+이로 인해 거리 기반 분석(H35 분할 포함)을 왜곡할 정도의 비정상적 값 생성하기에 downstream 분석의 정확성을 위해
+CP033371.1을 제외하고 총 80 strain 기준으로 H35 phylogrouping 및 후속 C/G/E 분석을 수행하였다.
+
+---
+
+## 2.4 Functional Categorization (COG Profiling)
+
+Roary로부터 얻은 pan-genome 단백질 서열 집합(또는 Prokka FAA 전체 병합본)을 eggNOG-mapper v2.1.9에 입력하여 eggNOG 5.0 데이터베이스 기반의 기능 주석과 COG 카테고리를 할당하였다. ('egg-nog-result.tabular')
 
 이 중 에너지 대사 [C], 탄수화물 대사 및 수송 [G], 아미노산 대사 및 수송 [E] 세 카테고리를 선택하여  
 strain × C/G/E 카운트 및 비율 매트릭스를 구성하였다.
@@ -81,17 +105,13 @@ phylogroup별 C/G/E 조성 비교 및 시각화에 사용하였다.
   - [Pan-genome FAA](data/prokka/)
 - **Tool**:  
   - [eggNOG-mapper v2.1.9](https://github.com/eggnogdb/eggnog-mapper)
-- **Output**:  
-  - [cog_by_strain_CGE_h35_no_CP033371.tsv](data/cog/cog_by_strain_CGE_h35_no_CP033371.tsv)
+- **Output**:
+  -  [cog_by_strain_CGE_h35_no_CP033371.tsv](https://github.com/minjBaek02/file_collection/blob/90180ecefe398d81ddba80568d430fc4c187ce96/%EA%B9%83%ED%97%88%EB%B8%8C%20%EC%97%85%EB%A1%9C%EB%93%9C%20%ED%8C%8C%EC%9D%BC/cog_by_strain_CGE_h35_no_CP033371.tsv)
+  -  [egg-nog-result.tabular](https://drive.google.com/file/d/1QG7--Y-G5xNm89FKU1c2Bf3uvwBT9V7K/view?usp=drive_link)
 
 ---
 
-## 2.4 Phylogrouping and Statistical Analysis
-
-Accessory genome 기반 phylogroup 정의를 위해 Roary에서 생성된 accessory gene 계통수 (`accessory_tree.nwk`)를 사용하였다.
-
-계통수 기반 거리 정보를 이용해 계층적 군집화를 수행하고, **cut height = 0.35** 기준으로 phylogroup을 정의하였다.  
-최종 phylogroup 정보는 [`phylogroup_h35.tsv`](data/metadata/phylogroup_h35.tsv)로 정리하였다.
+## 2.5 Statistics
 
 Phylogroup 간 기능 차이를 평가하기 위해 각 strain의 C/G/E 유전자 수 및 비율을 phylogroup 정보와 결합한 뒤,  
 카이제곱 검정과 Kruskal–Wallis 검정을 통해 phylogroup 간 분포 차이의 유의성을 평가하였다.  
@@ -101,17 +121,17 @@ Phylogroup 간 기능 차이를 평가하기 위해 각 strain의 C/G/E 유전�
 phylogroup별 색상 구분을 통해 기능적 프로파일의 군집 패턴을 시각화하였다.
 
 **Workflow**  
-- **Input**:  
-  - [accessory_tree.nwk](data/roary/accessory_tree.nwk)  
-  - [cog_by_strain_CGE_h35_no_CP033371.tsv](data/cog/cog_by_strain_CGE_h35_no_CP033371.tsv)
+- **Input**:   
+   -  [cog_by_strain_CGE_h35_no_CP033371.tsv](https://github.com/minjBaek02/file_collection/blob/90180ecefe398d81ddba80568d430fc4c187ce96/%EA%B9%83%ED%97%88%EB%B8%8C%20%EC%97%85%EB%A1%9C%EB%93%9C%20%ED%8C%8C%EC%9D%BC/cog_by_strain_CGE_h35_no_CP033371.tsv)
+   -  [phylogroup_h35.tsv](https://github.com/minjBaek02/file_collection/blob/90180ecefe398d81ddba80568d430fc4c187ce96/%EA%B9%83%ED%97%88%EB%B8%8C%20%EC%97%85%EB%A1%9C%EB%93%9C%20%ED%8C%8C%EC%9D%BC/phylogroup_h35.tsv) 
 - **Tool**:  
   - [Biopython](https://biopython.org/)  
   - [SciPy](https://scipy.org/)  
   - [scikit-learn](https://scikit-learn.org/)
 - **Output**:  
-  - [phylogroup_h35.tsv](data/metadata/phylogroup_h35.tsv)  
-  - [CGE_statistics.tsv](results/statistics/CGE_statistics.tsv)  
-  - [PCA_plot.png](figures/PCA_plot.png)
+  - [CGE_statistics.tsv](https://github.com/minjBaek02/file_collection/blob/7921a4415cf2962ba541b6143adc52028ba16572/%EA%B9%83%ED%97%88%EB%B8%8C%20%EC%97%85%EB%A1%9C%EB%93%9C%20%ED%8C%8C%EC%9D%BC/C_G_E_statistical_results.tsv)  
+  - [PCA_scores.csv](https://github.com/minjBaek02/file_collection/blob/7921a4415cf2962ba541b6143adc52028ba16572/%EA%B9%83%ED%97%88%EB%B8%8C%20%EC%97%85%EB%A1%9C%EB%93%9C%20%ED%8C%8C%EC%9D%BC/CGE_PCA_scores.csv)
+and so on...
 
 ---
 
@@ -119,33 +139,16 @@ phylogroup별 색상 구분을 통해 기능적 프로파일의 군집 패턴을
 
 ## Results I. Accessory Genome-based Phylogrouping and Tree Structure
 
-### 3.1 Accessory Genome-based Phylogrouping (H35)
+### 3.1 Phylogenetic Tree Based on Accessory Genome
+Accessory 유전자의 존재/부재 패턴을 기반으로 구축한 accessory genome 계통수에서, patristic distance를 이용한 계층적 군집화 결과 *Lactobacillus fermentum* 균주들은 **cut height = 0.35 (H35)**에서 **다섯 개의 주요 phylogroup**으로 명확하게 분리되었다.  
 
-Accessory 유전자의 존재/부재 패턴을 기반으로 구축한 accessory genome 계통수에서, patristic distance를 이용한 계층적 군집화 결과 *Lactobacillus fermentum* 균주들은  
-**다섯 개의 주요 phylogroup**으로 명확하게 분리되었다.
-
-DynamicTreeCut 알고리즘을 적용하여 여러 cut height를 비교한 결과, **cut height = 0.35 (H35)**에서 군집 경계가 가장 안정적으로 재현되었으며,  
-이후 모든 구조적·기능적 분석은 해당 phylogroup 레이블을 기준으로 수행하였다.
-
-분석 초기 단계에서 **CP033371.1**은 accessory tree 상에서 비정상적으로 긴 branch를 형성하는 extreme outlier로 확인되었고,  
-patristic distance 구조를 왜곡할 가능성이 있어 phylogroup 정의 및 후속 분석에서 제외하였다.
-
-> **Figure 2.** Accessory genome 기반 계통수 및 H35 기준 phylogroup 분리 결과  
-> (accessory_tree.nwk, phylogroup_h35.tsv)
-
----
-
-### 3.2 Phylogenetic Tree Based on Accessory Genome
-
-Accessory 유전자는 core genome에 비해 변동성이 크므로, phylogroup 정의에 사용되는 cut-off의 안정성이 중요하다.  
-본 연구에서는 여러 cut height를 비교한 결과, **H35 threshold가 가장 안정적으로 phylogroup을 분해하는 기준**으로 판단되었다.
-
-Accessory gene presence/absence matrix를 기반으로 phylogenetic tree를 구축하고, 각 strain에 대해 COG C/E/G 카테고리 유전자 수를 매핑하여  
+따라서, method 2.4와 같이 phylogenetic tree를 구축하고, 각 strain에 대해 COG C/E/G 카테고리 유전자 수를 매핑하여  
 **계통 구조와 발효 기능 조성 간의 연관성**을 평가하였다.
 
+<img width="1000" height="800" alt="image" src="https://github.com/user-attachments/assets/234d12b6-65d1-47e3-a589-7c7ecc681bea" />
+
 > **Figure 3.** Accessory gene presence/absence 기반 h 0.35 cut phylogenetic tree.  
-> 각 strain 옆에는 COG C (에너지 대사), G (탄수화물 대사/수송),  
-> E (아미노산 대사/수송) 카테고리 유전자 수가 함께 시각화되어 있다.
+> 각 strain 옆에는 COG C (에너지 대사), G (탄수화물 대사/수송), E (아미노산 대사/수송) 카테고리 유전자 수가 함께 시각화되어 있다.
 
 #### 🔎 Key Observations
 
@@ -153,8 +156,7 @@ Accessory gene presence/absence matrix를 기반으로 phylogenetic tree를 구�
    → accessory genome 조성에서 GROUP1 평균 패턴과의 이탈 가능성 시사  
 
 2. Tree 상의 서로 다른 구역에서 **C/G/E functional profile이 일관되게 다른 패턴**을 보임  
-   → phylogroup 분리가 단순한 계통학적 거리뿐 아니라  
-   → **기능적 조성 차이와 연관**되어 있을 가능성 제기  
+   → phylogroup 분리가 단순한 계통학적 거리뿐 아니라 **기능적 조성 차이와 연관**되어 있을 가능성 제기  
 
 이러한 관찰이 단순한 계통 구조상의 효과인지, 혹은 실제로 **phylogroup 간 기능 조성 차이가 통계적으로 유의한지**를 검증하기 위해  후속 기능 비교 및 통계 분석을 수행하였다.
 
@@ -172,9 +174,11 @@ Phylogroup 간 C/G/E 카테고리별 **총 유전자 수 분포**를 비교하�
 - Carbohydrate metabolism/transport (G): *p* ≈ 5.1 × 10⁻²¹⁷  
 - Amino acid metabolism/transport (E): *p* < 0.001  
 
-이는 관찰된 기능 조성 차이가 우연에 의한 변동이 아니라, 각 phylogroup의 진화 과정에서 고착된 **구조적 기능 차이**임을 강하게 시사한다.
+<img width="40%" alt="cog_group_counts_h35_heatmap" src="https://github.com/user-attachments/assets/d024d185-b164-4468-a3b6-d5caefd101eb" />
 
 > **Figure 4A.** Phylogroup × C/G/E 총 유전자 수 count heatmap
+
+이는 관찰된 기능 조성 차이가 우연에 의한 변동이 아니라, 각 phylogroup의 진화 과정에서 고착된 **구조적 기능 차이**임을 강하게 시사한다
 
 ---
 
@@ -185,6 +189,8 @@ Phylogroup 간 C/G/E 카테고리별 **총 유전자 수 분포**를 비교하�
 - C: *p* ≈ 6.4 × 10⁻⁶  
 - G: *p* ≈ 3.6 × 10⁻⁵  
 - E: *p* ≈ 3.7 × 10⁻¹¹
+
+<img width="40%" alt="cog_group_counts_h35_heatmap" src="https://github.com/user-attachments/assets/d024d185-b164-4468-a3b6-d5caefd101eb" />
   
 > **Figure 4B.** Phylogroup별 strain-level C/G/E 분포 (boxplot)
 
@@ -197,11 +203,14 @@ Phylogroup 간 C/G/E 카테고리별 **총 유전자 수 분포**를 비교하�
 
 유전체 크기 차이에 따른 편향을 보정하기 위해, 각 phylogroup에서 C/G/E 카테고리가 차지하는 비율을 기준으로 2×2 contingency table을 구성하고 Fisher’s exact test를 수행하였다.
 
+<img width="1560" height="960" alt="fisher_CGE_enrichment_h35_barplot" src="https://github.com/user-attachments/assets/daf6f4c0-8f05-49d4-9899-ae4fc93d1a64" />
+
 > **Figure 4C.** Genome-size 보정 후 phylogroup별 C/G/E enrichment 분석 결과
 
 그 결과 **Group 1**은 C/G/E 기능 유전자에 대해 **Odds Ratio = 1.297** (*p* = 4.9 × 10⁻²⁰)을 보여, 전체 유전자 수를 고려하더라도 발효 관련 기능이 실제로 **유의하게 농축(enriched)**된 phylogroup으로 나타났다.
 
 반대로 **Groups 2, 4, 5**는 동일 분석에서 C/G/E 카테고리가 유의하게 결손(depleted)된 패턴을 보였다.
+→ 기능 차이는 genome size artifact가 아닌 **구조적 특성**임을 확인하였다.
 
 ---
 
@@ -209,20 +218,24 @@ Phylogroup 간 C/G/E 카테고리별 **총 유전자 수 분포**를 비교하�
 
 ### 4.1 Anatomical Analysis of the Outlier: A Gap Within Group 1
 
-Accessory genome 기반 계통 분석에서 **CP076082.1**은 Group 1의 하위 클러스터에 속함에도 불구하고, 동일 phylogroup 내 다른 균주들과 비교하여 **비정상적으로 긴 가지(long branch)**를 형성하며 계통수의 외곽에 위치하였다.
+Figure 3.과 같이 **CP076082.1**은 Group 1의 하위 클러스터에 속함에도 불구하고, 동일 phylogroup 내 다른 균주들과 비교하여 **비정상적으로 긴 가지(long branch)**를 형성하며 계통수의 외곽에 위치하였다.
 
 흥미롭게도 ANI (Average Nucleotide Identity) 분석에서는 CP076082.1이 Group 1 균주들과 **높은 유전체 유사도**를 유지하고 있음이 확인되었으나, **accessory gene presence/absence 패턴에서는 뚜렷하게 이탈된 조성**을 보였다.
 
-이는 CP076082.1이 비교적 최근의 진화 과정에서 **급격한 유전자 조성 변화 또는 유전체 재구성(genomic rearrangement)**을 경험했을 가능성을 시사한다.
+이는 CP076082.1이 비교적 최근의 진화 과정에서 **급격한 악세사리 유전자 조성 변화 또는 유전체 재구성(genomic rearrangement)**을 경험했을 가능성이 있어보였다.
 
 ---
 
-### 4.2 The “E” Factor: Selective Functional Decay
+### 4.2  Functional Divergence Analysis of CP076082.1
 
 CP076082.1의 계통적 이탈 원인을 규명하기 위해, C/G/E 카테고리별 유전자 수를 기반으로 **Z-score 분석 및 PCA**를 수행하였다.  
 
 #### 4.2.1 Functional Boxplot Analysis  
-<!-- Figure 4.3 -->
+각 phylogroup(Group 1) 내에서 C/G/E 기능군 유전자 수의 분포를 boxplot으로 나타내고, 그 위에 CP076082.1의 상대적 위치를 z-score로 정규화하여 나타냈다. 
+
+<img width="3000" height="1800" alt="CP0760821_CGE_boxplot_zscore" src="https://github.com/user-attachments/assets/1946ddf9-9e7f-4455-86d0-dd30c4215e11" />
+
+> **Figure 5A.** Z-score–normalized boxplots of C/G/E functional gene counts within phylogroup Group 1.
 
 - C (에너지 대사) 및 G (탄수화물 대사/수송) 유전자 수는  Group 1의 분포 범위 내에 안정적으로 위치하였다.
 - 반면, **E 카테고리는 Group 1 내에서 유일하게 하위 5% 미만**에 해당하는 급격한 감소를 보였다.
@@ -230,7 +243,11 @@ CP076082.1의 계통적 이탈 원인을 규명하기 위해, C/G/E 카테고리
 이는 CP076082.1의 기능적 이탈이 전반적인 대사 붕괴가 아닌, **아미노산 대사 기능에 선택적으로 집중된 현상**임을 의미한다.
 
 #### 4.2.2 Principal Component Analysis (PCA)  
-<!-- Figure 4.4 -->
+또한, PCA 분석으로 C/G/E를 동시에 고려하며, strain들이 이 조합으로 어떻게 퍼지는지 시각화하였다.
+
+<img width="2400" height="1800" alt="GROUP1_only_CGE_PCA_plot" src="https://github.com/user-attachments/assets/71875945-e470-49ef-a1cd-72e3392d0920" />
+
+> **Figure 5B.** PCA of C/G/E Functional Profiles Reveals Within-Phylogroup Divergence in L. fermentum Group 1
 
 PCA plot 상에서 CP076082.1을 Group 1의 중심부에서 분리시키는 주요 loading factor는 **E 카테고리 유전자 결손**으로 확인되었다.
 
@@ -281,7 +298,7 @@ Group 1 균주들이 공통적으로 보유하는 accessory gene 중, CP076082.1
 
 ---
 
-# 🧩 7. Integrated Conclusion
+# 🧩 4. Integrated Conclusion
 
 본 연구는 크게 두가지 축으로 분석을 진행했다.  
 ① **H35 phylogroup 간 C/G/E 기능 조성 차이**,  
