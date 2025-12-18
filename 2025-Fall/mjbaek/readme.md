@@ -36,8 +36,7 @@ ANI 95% 미만 값을 보이는 종 내 이질적 균주 (예: AP017974.1 등)�
 
 ## 2.2 Genome Annotation and Pan-Genome Construction
 
-각 균주의 주석 형식을 통일하기 위해 Prokka (v1.14.6)를 사용하여 ORF를 재예측하고 기능을 주석화하였다.  
-각 균주별 GFF 파일과 단백질 서열(FAA)을 생성하였다.
+각 균주의 주석 형식을 통일하기 위해 Prokka (v1.14.6)를 사용하여 각 균주별 GFF 파일과 단백질 서열(FAA)을 생성하였다.
 
 생성된 Prokka GFF 전체를 Roary (v3.13.0)에 입력하여 pan-genome을 구축하였으며, gene_presence_absence.* 및 gene_presence_absence.Rtab 파일을 통해 core 및 accessory 유전자 집합을 정의하였다.  
 전체 균주의 **95% 이상에서 발견되는 유전자**를 core genome으로, 그 외(shell + cloud)를 accessory genome으로 정의하였다.
@@ -113,18 +112,14 @@ phylogroup별 색상 구분을 통해 기능적 프로파일의 군집 패턴을
 
 ### 3.1 Accessory Genome-based Phylogrouping (H35)
 
-Accessory 유전자의 존재/부재 패턴을 기반으로 구축한 accessory genome 계통수에서,  
-patristic distance를 이용한 계층적 군집화 결과 *Lactobacillus fermentum* 균주들은  
+Accessory 유전자의 존재/부재 패턴을 기반으로 구축한 accessory genome 계통수에서, patristic distance를 이용한 계층적 군집화 결과 *Lactobacillus fermentum* 균주들은  
 **다섯 개의 주요 phylogroup**으로 명확하게 분리되었다.
 
-DynamicTreeCut 알고리즘을 적용하여 여러 cut height를 비교한 결과,  
-**cut height = 0.35 (H35)**에서 군집 경계가 가장 안정적으로 재현되었으며,  
+DynamicTreeCut 알고리즘을 적용하여 여러 cut height를 비교한 결과, **cut height = 0.35 (H35)**에서 군집 경계가 가장 안정적으로 재현되었으며,  
 이후 모든 구조적·기능적 분석은 해당 phylogroup 레이블을 기준으로 수행하였다.
 
-분석 초기 단계에서 **CP033371.1**은 accessory tree 상에서  
-비정상적으로 긴 branch를 형성하는 extreme outlier로 확인되었고,  
-patristic distance 구조를 왜곡할 가능성이 있어  
-phylogroup 정의 및 후속 분석에서 제외하였다.
+분석 초기 단계에서 **CP033371.1**은 accessory tree 상에서 비정상적으로 긴 branch를 형성하는 extreme outlier로 확인되었고,  
+patristic distance 구조를 왜곡할 가능성이 있어 phylogroup 정의 및 후속 분석에서 제외하였다.
 
 > **Figure 2.** Accessory genome 기반 계통수 및 H35 기준 phylogroup 분리 결과  
 > (accessory_tree.nwk, phylogroup_h35.tsv)
@@ -133,13 +128,10 @@ phylogroup 정의 및 후속 분석에서 제외하였다.
 
 ### 3.2 Phylogenetic Tree Based on Accessory Genome
 
-Accessory 유전자는 core genome에 비해 변동성이 크므로,  
-phylogroup 정의에 사용되는 cut-off의 안정성이 중요하다.  
-본 연구에서는 여러 cut height를 비교한 결과,  
-**H35 threshold가 가장 안정적으로 phylogroup을 분해하는 기준**으로 판단되었다.
+Accessory 유전자는 core genome에 비해 변동성이 크므로, phylogroup 정의에 사용되는 cut-off의 안정성이 중요하다.  
+본 연구에서는 여러 cut height를 비교한 결과, **H35 threshold가 가장 안정적으로 phylogroup을 분해하는 기준**으로 판단되었다.
 
-Accessory gene presence/absence matrix를 기반으로 phylogenetic tree를 구축하고,  
-각 strain에 대해 COG C/E/G 카테고리 유전자 수를 매핑하여  
+Accessory gene presence/absence matrix를 기반으로 phylogenetic tree를 구축하고, 각 strain에 대해 COG C/E/G 카테고리 유전자 수를 매핑하여  
 **계통 구조와 발효 기능 조성 간의 연관성**을 평가하였다.
 
 > **Figure 3.** Accessory gene presence/absence 기반 phylogenetic tree.  
@@ -155,10 +147,7 @@ Accessory gene presence/absence matrix를 기반으로 phylogenetic tree를 구�
    → phylogroup 분리가 단순한 계통학적 거리뿐 아니라  
    → **기능적 조성 차이와 연관**되어 있을 가능성 제기  
 
-이러한 관찰이  
-단순한 계통 구조상의 효과인지,  
-혹은 실제로 **phylogroup 간 기능 조성 차이가 통계적으로 유의한지**를 검증하기 위해  
-후속 기능 비교 및 통계 분석을 수행하였다.
+이러한 관찰이 단순한 계통 구조상의 효과인지, 혹은 실제로 **phylogroup 간 기능 조성 차이가 통계적으로 유의한지**를 검증하기 위해  후속 기능 비교 및 통계 분석을 수행하였다.
 
 ---
 
@@ -168,18 +157,13 @@ Accessory gene presence/absence matrix를 기반으로 phylogenetic tree를 구�
 
 #### 3.3.1 Group-level Total Counts (Chi-square Test)
 
-Phylogroup 간 C/G/E 카테고리별 **총 유전자 수 분포**를 비교하기 위해  
-카이제곱 검정을 수행한 결과,  
-세 기능 카테고리 모두에서 극도로 유의한 차이가 관찰되었다.
+Phylogroup 간 C/G/E 카테고리별 **총 유전자 수 분포**를 비교하기 위해 카이제곱 검정을 수행한 결과, 세 기능 카테고리 모두에서 극도로 유의한 차이가 관찰되었다.
 
 - Energy metabolism (C): *p* ≈ 1.2 × 10⁻²⁷⁶  
 - Carbohydrate metabolism/transport (G): *p* ≈ 5.1 × 10⁻²¹⁷  
 - Amino acid metabolism/transport (E): *p* < 0.001  
 
-이는 관찰된 기능 조성 차이가  
-우연에 의한 변동이 아니라,  
-각 phylogroup의 진화 과정에서 고착된  
-**구조적 기능 차이**임을 강하게 시사한다.
+이는 관찰된 기능 조성 차이가 우연에 의한 변동이 아니라, 각 phylogroup의 진화 과정에서 고착된 **구조적 기능 차이**임을 강하게 시사한다.
 
 > **Figure 4A.** Phylogroup × C/G/E 총 유전자 수 count heatmap
 
@@ -187,41 +171,28 @@ Phylogroup 간 C/G/E 카테고리별 **총 유전자 수 분포**를 비교하�
 
 #### 3.3.2 Strain-level Distribution (Kruskal–Wallis Test)
 
-개별 균주 수준에서 C/G/E 유전자 수 분포를 비교하기 위해  
-비모수 Kruskal–Wallis 검정을 적용한 결과,  
-모든 카테고리에서 phylogroup 간 분포 차이가 통계적으로 유의하였다.
+개별 균주 수준에서 C/G/E 유전자 수 분포를 비교하기 위해 비모수 Kruskal–Wallis 검정을 적용한 결과, 모든 카테고리에서 phylogroup 간 분포 차이가 통계적으로 유의하였다.
 
 - C: *p* ≈ 6.4 × 10⁻⁶  
 - G: *p* ≈ 3.6 × 10⁻⁵  
-- E: *p* ≈ 3.7 × 10⁻¹¹  
-
-특히 E 카테고리에서  
-phylogroup 간 분포 분리가 가장 뚜렷하게 나타났으며,  
-이는 strain별 C/G/E 비율을 나타낸 boxplot에서  
-**Group 1과 저기능 phylogroup 간 중앙값 차이**로 명확히 확인된다.
-
+- E: *p* ≈ 3.7 × 10⁻¹¹
+  
 > **Figure 4B.** Phylogroup별 strain-level C/G/E 분포 (boxplot)
+
+특히 E 카테고리에서 phylogroup 간 분포 분리가 가장 뚜렷하게 나타났으며, 이는 strain별 C/G/E 비율을 나타낸 boxplot에서  
+**Group 1과 저기능 phylogroup 간 중앙값 차이**로 명확히 확인된다.
 
 ---
 
 #### 3.3.3 Genome-size Adjusted Enrichment (Fisher’s Exact Test)
 
-유전체 크기 차이에 따른 편향을 보정하기 위해,  
-각 phylogroup에서 C/G/E 카테고리가 차지하는 비율을 기준으로  
-2×2 contingency table을 구성하고  
-Fisher’s exact test를 수행하였다.
-
-그 결과 **Group 1**은  
-C/G/E 기능 유전자에 대해 **Odds Ratio = 1.297**  
-(*p* = 4.9 × 10⁻²⁰)을 보여,  
-전체 유전자 수를 고려하더라도  
-발효 관련 기능이 실제로 **유의하게 농축(enriched)**된 phylogroup으로 나타났다.
-
-반대로 **Groups 2, 4, 5**는  
-동일 분석에서 C/G/E 카테고리가  
-유의하게 결손(depleted)된 패턴을 보였다.
+유전체 크기 차이에 따른 편향을 보정하기 위해, 각 phylogroup에서 C/G/E 카테고리가 차지하는 비율을 기준으로 2×2 contingency table을 구성하고 Fisher’s exact test를 수행하였다.
 
 > **Figure 4C.** Genome-size 보정 후 phylogroup별 C/G/E enrichment 분석 결과
+
+그 결과 **Group 1**은 C/G/E 기능 유전자에 대해 **Odds Ratio = 1.297** (*p* = 4.9 × 10⁻²⁰)을 보여, 전체 유전자 수를 고려하더라도 발효 관련 기능이 실제로 **유의하게 농축(enriched)**된 phylogroup으로 나타났다.
+
+반대로 **Groups 2, 4, 5**는 동일 분석에서 C/G/E 카테고리가 유의하게 결손(depleted)된 패턴을 보였다.
 
 ---
 
@@ -229,48 +200,100 @@ C/G/E 기능 유전자에 대해 **Odds Ratio = 1.297**
 
 ### 4.1 Anatomical Analysis of the Outlier: A Gap Within Group 1
 
-Accessory genome 기반 계통 분석에서 **CP076082.1**은  
-Group 1의 하위 클러스터에 속함에도 불구하고,  
-동일 phylogroup 내 다른 균주들과 비교하여  
-**비정상적으로 긴 가지(long branch)**를 형성하며 계통수의 외곽에 위치하였다.
+Accessory genome 기반 계통 분석에서 **CP076082.1**은 Group 1의 하위 클러스터에 속함에도 불구하고, 동일 phylogroup 내 다른 균주들과 비교하여 **비정상적으로 긴 가지(long branch)**를 형성하며 계통수의 외곽에 위치하였다.
 
-ANI 분석에서는 Group 1과 높은 유전체 유사성을 유지하고 있음에도 불구하고,  
-accessory gene presence/absence 패턴에서는  
-뚜렷하게 이탈된 조성을 보였다.
+흥미롭게도 ANI (Average Nucleotide Identity) 분석에서는 CP076082.1이 Group 1 균주들과 **높은 유전체 유사도**를 유지하고 있음이 확인되었으나, **accessory gene presence/absence 패턴에서는 뚜렷하게 이탈된 조성**을 보였다.
+
+이는 CP076082.1이 비교적 최근의 진화 과정에서 **급격한 유전자 조성 변화 또는 유전체 재구성(genomic rearrangement)**을 경험했을 가능성을 시사한다.
 
 ---
 
-### 4.2 Selective Functional Decay in Category E
+## 🧬 Result 2. Selective Functional Decay Centered on Category E
 
-C/G/E 카테고리 기반 Z-score 분석 및 PCA 결과,  
-CP076082.1의 계통적 이탈은  
-**아미노산 대사(E) 기능의 선택적 결손**에 의해 주도됨이 확인되었다.
+### 4.2 The “E” Factor: Selective Functional Decay
 
-> **Figure 5A.** Group 1 내 CP076082.1의 C/G/E boxplot  
-> **Figure 5B.** C/G/E 기반 PCA plot
+CP076082.1의 계통적 이탈 원인을 규명하기 위해, C/G/E 카테고리별 유전자 수를 기반으로 **Z-score 분석 및 PCA**를 수행하였다.  
+
+#### 4.2.1 Functional Boxplot Analysis  
+<!-- Figure 4.3 -->
+
+- C (에너지 대사) 및 G (탄수화물 대사/수송) 유전자 수는  Group 1의 분포 범위 내에 안정적으로 위치하였다.
+- 반면, **E 카테고리는 Group 1 내에서 유일하게 하위 5% 미만**에 해당하는 급격한 감소를 보였다.
+
+이는 CP076082.1의 기능적 이탈이 전반적인 대사 붕괴가 아닌, **아미노산 대사 기능에 선택적으로 집중된 현상**임을 의미한다.
+
+#### 4.2.2 Principal Component Analysis (PCA)  
+<!-- Figure 4.4 -->
+
+PCA plot 상에서 CP076082.1을 Group 1의 중심부에서 분리시키는 주요 loading factor는 **E 카테고리 유전자 결손**으로 확인되었다.
+
+즉, 해당 균주는 Group 1이 공유하는 기본적인 대사 골격(C/G)은 유지하면서도, **아미노산 대사 기능만 선택적으로 약화된 ‘기능적 변이체(functional variant)’**로 해석된다.
 
 ---
 
-### 4.3 Genomic Evidence of Loss-and-Gain Strategy
+## 🧪 Result 3. Strategic Genome Streamlining via Loss-and-Gain Dynamics
 
-CP076082.1은 아미노산 생합성 관련 경로(his-operon, methionine metabolism)를  
-선택적으로 소실한 반면,  
-특정 탄수화물 수송 및 이용 유전자(malK, ugpA, araQ)를 획득하였다.
+### 4.3 Genomic Evidence: Strategy of “Loss and Gain”
 
-이는  
-**아미노산 자급 능력을 포기하는 대신  
-환경 내 탄수화물 자원을 효율적으로 활용하는  
-전략적 유전체 재구성**으로 해석된다.
+단순한 유전자 수 차이를 넘어, 실제로 어떤 대사 경로(pathway)가 변화했는지를 분석한 결과 CP076082.1의 유전체에서는 **‘대사적 최적화(metabolic optimization)’ 전략**이 뚜렷하게 관찰되었다.
+
+#### 4.3.1 Major Pathway Loss: The Cost of Adaptation
+
+Group 1 균주들이 공통적으로 보유하는 accessory gene 중, CP076082.1에서만 선택적으로 소실된 주요 경로는 다음과 같다.
+
+- **Histidine biosynthesis operon (hisA/B/C/D/G/H/Z/K)**  
+  → 히스티딘 생합성에 필요한 전체 오페론이 완전히 결손됨
+- **Methionine metabolism genes (metI, metB, metE)**  
+  → 메티오닌 생합성 및 재생 경로 약화
+- **Translational factors (lepA, tuf)**  
+  → 단백질 합성 효율과 관련된 보조 인자의 결손
+
+이러한 유전자 소실 패턴은, 아미노산이 풍부한 환경에 적응한 균주가 **내생적 아미노산 합성 능력을 포기하는 대신 에너지 비용을 절감한** 전형적인 *genome streamlining* 사례로 해석될 수 있을 듯하다.
+
+#### 4.3.2 Unique Gene Gain: Niche Specialization
+
+반면, CP076082.1에서만 관찰되는 독특한 accessory gene 획득은 **특정 탄소원 활용 능력의 강화**를 시사한다.
+
+- **malK**: Maltose transporter  
+- **ugpA**: Glycerol-3-phosphate transporter  
+- **araQ**: Arabinose transporter / regulator  
+
+이는 해당 균주가 아미노산 자급 능력을 축소하는 대신,  **외부 탄수화물 자원을 보다 효율적으로 이용하는 방향으로 특화**되었음을 보여준다.
 
 ---
 
-### 4.4 Summary of Outlier Analysis
+### 4.4 Summary of Results II
 
-CP076082.1은  
-Group 1의 기본적인 대사 골격을 유지하면서도,  
-아미노산 대사 기능(E)을 선택적으로 축소한  
-**기능적 변이체(functional variant)**로 정의된다.
+종합하면, CP076082.1의 계통적 이탈은 무작위적인 유전자 손실이 아니라,
 
-이러한 기능 재편성은  
-accessory genome matrix에 반영되어  
-계통 트리 상에서 독립적인 장가지(long-branch) 분기를 형성하였다.
+> **아미노산 자급 능력(E)을 포기하는 대신,**  
+> **특정 탄수화물 자원(G)을 효율적으로 활용하기 위한**  
+> **전략적 유전체 재구성의 결과**
+
+로 해석된다.
+
+이러한 선택적 기능 재편성은 accessory genome presence/absence matrix에 직접 반영되었으며, 그 결과 계통 트리 상에서 **독립적인 장가지(long-branch) 분기**를 형성하게 된 것이다.
+
+---
+
+# 🧩 7. Integrated Conclusion
+
+본 연구는 크게 두가지 축으로 분석을 진행했다.  
+① **H35 phylogroup 간 C/G/E 기능 조성 차이**,  
+② **동일 그룹 내 outlier(CP076082.1)의 기능·구조 이탈 분석** — 을 종합하면 다음과 같다.
+
+## 핵심 결론
+
+1. **C/G/E 기능군은 L. fermentum의 발효 대사를 규정하는 핵심 functional axis이며,**  
+   phylogroup(H35) 간 이 축에서 통계적으로 유의한 차이가 존재한다.  
+   → 즉, accessory genome 기반 phylogroup은 단순 gene 조성 차이가 아니라  
+     **각 그룹의 고유한 발효 대사 signature**를 반영한다.
+
+2. **CP076082.1은 E category 핵심 경로 결손 + 특이 carbon transporter 획득이라는 재구성을 통해**  
+   동일 그룹 내에서도 기능적으로 이탈된 패턴을 보였다.  
+   → 즉, **군집 분리와 outlier 형성 모두가 C/G/E 기능축의 구조적 변화와 직접적으로 연결된다.**
+ 
+## ⭐ Final Statement
+
+**“Accessory genome 기반 phylogroup은 L. fermentum의 발효 대사 signature를 명확히 구분하는 지표이며,  
+CP076082.1과 같은 outlier의 분리 또한 C/G/E 기능축 재구성으로 설명된다.”**
