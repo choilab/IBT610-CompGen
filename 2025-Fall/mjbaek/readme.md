@@ -1,3 +1,5 @@
+
+
 # 📌 1. Introduction
 
 *Lactobacillus fermentum*은 유제품, 채소 발효식품, 인체 장·구강 등 다양한 발효 환경에서 반복적으로 분리되며, 대체로 **1.8–2.3 Mb** 크기의 유전체를 가진다(Azmal Ali et al., 2018).  
@@ -13,8 +15,7 @@
 L. fermentum phylogroup이 단순한 유전체 유사도가 아니라 발효 기능 차이를 반영한 기능적 그룹임을 확인하고자 하였다.
 
 <img width="2000" height="1080" alt="introduction" src="https://github.com/user-attachments/assets/1ba507ea-6724-4b91-9e32-7d4ba39389f8" />
-> **Figure 1.** Overview of Functional Divergence and Phylogroup Structure in L. fermentum
-
+> **Figure 1.** Overview of Functional Divergence and Phylogroup Structure in L. fermentum  
 
 ---
 
@@ -24,8 +25,10 @@ L. fermentum phylogroup이 단순한 유전체 유사도가 아니라 발효 기
 
 NCBI RefSeq 데이터베이스에서 *Lactobacillus fermentum*으로 분류된 모든 유전체(총 **155개**)를 FASTA 형식으로 다운로드 하였다. Genome assembly level이 “Complete Genome”인 시퀀스만 1차 선별하였으며, 이후 fastANI를 이용해 균주 간 쌍별 ANI를 계산하였다.
 
-ANI 95% 미만 값을 보이는 종 내 이질적 균주 (예: AP017974.1 등)는 분석에서 제외하였고, 중복 및 저품질 유전체를 제거한 후  
-최종 **81개 균주**를 downstream 분석에 사용하였다.
+Figure 2.와 같이 ANI 95% 미만 값을 보이는 종 내 이질적 균주 (예: AP017974.1 등)와 중복 유전체를 제거하고, complete한 genome 수준의 유전체만을 남겨 최종 **81개 균주**를 downstream 분석에 사용하였다.
+
+<img width="3200" height="2800" alt="ani_heatmap" src="https://github.com/user-attachments/assets/12dec12e-fa07-4ee5-b7c0-6763e4dad9fe" />
+> **Figure 2.** ANI heatmap
 
 **Workflow**  
 - **Input**:  
