@@ -12,6 +12,10 @@
 또한 동일 phylogroup 내에서 관찰되는 **outlier strain**의 경우, 발효와 관련된 특정 COG 기능 유전자의 소실 또는 획득이해당 균주가 다른 위치에 분리되는 현상을 설명할 수 있는지를 분석함으로써,
 L. fermentum phylogroup이 단순한 유전체 유사도가 아니라 발효 기능 차이를 반영한 기능적 그룹임을 확인하고자 하였다.
 
+<img width="2000" height="1080" alt="introduction" src="https://github.com/user-attachments/assets/1ba507ea-6724-4b91-9e32-7d4ba39389f8" />
+> **Figure 1.** Overview of Functional Divergence and Phylogroup Structure in L. fermentum
+
+
 ---
 
 # 🧬 2. Materials and Methods
@@ -134,7 +138,7 @@ Accessory 유전자는 core genome에 비해 변동성이 크므로, phylogroup 
 Accessory gene presence/absence matrix를 기반으로 phylogenetic tree를 구축하고, 각 strain에 대해 COG C/E/G 카테고리 유전자 수를 매핑하여  
 **계통 구조와 발효 기능 조성 간의 연관성**을 평가하였다.
 
-> **Figure 3.** Accessory gene presence/absence 기반 phylogenetic tree.  
+> **Figure 3.** Accessory gene presence/absence 기반 h 0.35 cut phylogenetic tree.  
 > 각 strain 옆에는 COG C (에너지 대사), G (탄수화물 대사/수송),  
 > E (아미노산 대사/수송) 카테고리 유전자 수가 함께 시각화되어 있다.
 
@@ -196,7 +200,7 @@ Phylogroup 간 C/G/E 카테고리별 **총 유전자 수 분포**를 비교하�
 
 ---
 
-## Results III. Deep-dive into an Outlier Strain (CP076082.1)
+## 🧬Results III. Deep-dive into an Outlier Strain (CP076082.1)
 
 ### 4.1 Anatomical Analysis of the Outlier: A Gap Within Group 1
 
@@ -207,8 +211,6 @@ Accessory genome 기반 계통 분석에서 **CP076082.1**은 Group 1의 하위 
 이는 CP076082.1이 비교적 최근의 진화 과정에서 **급격한 유전자 조성 변화 또는 유전체 재구성(genomic rearrangement)**을 경험했을 가능성을 시사한다.
 
 ---
-
-## 🧬 Result 2. Selective Functional Decay Centered on Category E
 
 ### 4.2 The “E” Factor: Selective Functional Decay
 
@@ -230,8 +232,6 @@ PCA plot 상에서 CP076082.1을 Group 1의 중심부에서 분리시키는 주�
 즉, 해당 균주는 Group 1이 공유하는 기본적인 대사 골격(C/G)은 유지하면서도, **아미노산 대사 기능만 선택적으로 약화된 ‘기능적 변이체(functional variant)’**로 해석된다.
 
 ---
-
-## 🧪 Result 3. Strategic Genome Streamlining via Loss-and-Gain Dynamics
 
 ### 4.3 Genomic Evidence: Strategy of “Loss and Gain”
 
