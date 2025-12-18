@@ -14,8 +14,7 @@
 따라서 본 연구에서는 공개된 *L. fermentum* 유전체 **155개**를 ANI 기준으로 필터링하여 **80개의 high-quality genome**을 선별한 뒤 pan-genome을 구축하고, accessory gene의 존재/부재 패턴을 기반으로 phylogroup을 정의하였다.  
 이어 각 균주의 accessory 유전자에 **COG 기반 기능 주석**을 부여하고, 발효와 직접적으로 연관된 **C (Energy), E (Amino acid), G (Carbohydrate)** 카테고리의 조성을 정량화하여 phylogroup 간 발효 대사 시그니처를 비교하였다.
 
-또한 동일 phylogroup 내에서 관찰되는 **outlier strain**의 경우, 발효와 관련된 특정 COG 기능 유전자의 소실 또는 획득이해당 균주가 다른 위치에 분리되는 현상을 설명할 수 있는지를 분석함으로써,
-L. fermentum phylogroup이 단순한 유전체 유사도가 아니라 발효 기능 차이를 반영한 기능적 그룹임을 확인하고자 하였다.
+또한, 동일 phylogroup 내에서 관찰되는 **outlier strain**의 경우, outlier로 보이는 이유가 발효와 관련된 특정 COG 기능 유전자의 소실 또는 획득과 관련이 있는지 보고자하였다.
 
 <img width="2000" height="1080" alt="introduction" src="https://github.com/user-attachments/assets/1ba507ea-6724-4b91-9e32-7d4ba39389f8" />
 
