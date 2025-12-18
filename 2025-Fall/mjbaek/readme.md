@@ -190,7 +190,12 @@ Phylogroup 간 C/G/E 카테고리별 **총 유전자 수 분포**를 비교하�
 - G: *p* ≈ 3.6 × 10⁻⁵  
 - E: *p* ≈ 3.7 × 10⁻¹¹
 
-<img width="40%" alt="cog_group_counts_h35_heatmap" src="https://github.com/user-attachments/assets/d024d185-b164-4468-a3b6-d5caefd101eb" />
+<img
+  width="1560"
+  height="960"
+  alt="cog_CGE_h35_boxplot_smallfliers"
+  src="https://raw.githubusercontent.com/minjBaek02/file_collection/6d92eb33ab26ca0789dd45a316c029d4aec6d0d7/깃허브%20업로드%20파일/cog_CGE_h35_boxplot_smallfliers.png"
+/>
   
 > **Figure 4B.** Phylogroup별 strain-level C/G/E 분포 (boxplot)
 
