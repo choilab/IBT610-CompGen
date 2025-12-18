@@ -184,7 +184,7 @@ Phylogroup 간 C/G/E 카테고리별 **총 유전자 수 분포**를 비교하�
 
 #### 3.3.2 Strain-level Distribution (Kruskal–Wallis Test)
 
-개별 균주 수준에서 C/G/E 유전자 수 분포를 비교하기 위해 비모수 Kruskal–Wallis 검정을 적용한 결과, 모든 카테고리에서 phylogroup 간 분포 차이가 통계적으로 유의하였다.
+**개별 균주 수준에서 C/G/E 유전자 수 분포**를 비교하기 위해 비모수 Kruskal–Wallis 검정을 적용한 결과, 모든 카테고리에서 phylogroup 간 분포 차이가 통계적으로 유의하였다.
 
 - C: *p* ≈ 6.4 × 10⁻⁶  
 - G: *p* ≈ 3.6 × 10⁻⁵  
@@ -208,7 +208,7 @@ Phylogroup 간 C/G/E 카테고리별 **총 유전자 수 분포**를 비교하�
 
 유전체 크기 차이에 따른 편향을 보정하기 위해, 각 phylogroup에서 C/G/E 카테고리가 차지하는 비율을 기준으로 2×2 contingency table을 구성하고 Fisher’s exact test를 수행하였다.
 
-<img width="1560" height="960" alt="fisher_CGE_enrichment_h35_barplot" src="https://github.com/user-attachments/assets/daf6f4c0-8f05-49d4-9899-ae4fc93d1a64" />
+<img width="1200" height="800" alt="fisher_CGE_enrichment_h35_barplot" src="https://github.com/user-attachments/assets/daf6f4c0-8f05-49d4-9899-ae4fc93d1a64" />
 
 > **Figure 4C.** Genome-size 보정 후 phylogroup별 C/G/E enrichment 분석 결과
 
@@ -289,20 +289,6 @@ Group 1 균주들이 공통적으로 보유하는 accessory gene 중, CP076082.1
 
 ---
 
-### 4.4 Summary of Results II
-
-종합하면, CP076082.1의 계통적 이탈은 무작위적인 유전자 손실이 아니라,
-
-> **아미노산 자급 능력(E)을 포기하는 대신,**  
-> **특정 탄수화물 자원(G)을 효율적으로 활용하기 위한**  
-> **전략적 유전체 재구성의 결과**
-
-로 해석된다.
-
-이러한 선택적 기능 재편성은 accessory genome presence/absence matrix에 직접 반영되었으며, 그 결과 계통 트리 상에서 **독립적인 장가지(long-branch) 분기**를 형성하게 된 것이다.
-
----
-
 # 🧩 4. Integrated Conclusion
 
 본 연구는 크게 두가지 축으로 분석을 진행했다.  
@@ -312,15 +298,40 @@ Group 1 균주들이 공통적으로 보유하는 accessory gene 중, CP076082.1
 ## 핵심 결론
 
 1. **C/G/E 기능군은 L. fermentum의 발효 대사를 규정하는 핵심 functional axis이며,**  
-   phylogroup(H35) 간 이 축에서 통계적으로 유의한 차이가 존재한다.  
-   → 즉, accessory genome 기반 phylogroup은 단순 gene 조성 차이가 아니라  
-     **각 그룹의 고유한 발효 대사 signature**를 반영한다.
+   phylogroup(H35) 간 이 축에서 통계적으로 유의한 차이가 존재한다. → 즉, accessory genome 기반 phylogroup은 단순 gene 조성 차이가 아니라 **각 그룹의 고유한 발효 대사 signature**를 반영한다.
 
 2. **CP076082.1은 E category 핵심 경로 결손 + 특이 carbon transporter 획득이라는 재구성을 통해**  
-   동일 그룹 내에서도 기능적으로 이탈된 패턴을 보였다.  
-   → 즉, **군집 분리와 outlier 형성 모두가 C/G/E 기능축의 구조적 변화와 직접적으로 연결된다.**
- 
-## ⭐ Final Statement
+   동일 그룹 내에서도 기능적으로 이탈된 패턴을 보였다. → 즉, **군집 분리와 outlier 형성 모두가 C/G/E 기능축의 구조적 변화와 직접적으로 연결된다.**
 
-**“Accessory genome 기반 phylogroup은 L. fermentum의 발효 대사 signature를 명확히 구분하는 지표이며,  
-CP076082.1과 같은 outlier의 분리 또한 C/G/E 기능축 재구성으로 설명된다.”**
+---
+ 
+# ⭐ 5. Discussion
+## 5. Discussion: Niche Adaptation and Industrial Implications
+
+### 5.1 Rice-noodle 발효 환경에 대한 적응
+
+CP076082.1은 메타데이터 분석 결과 **rice-noodle(쌀국수)** 유래 균주로 확인되었다.
+이는 본 연구에서 관찰된 유전체 조성과 일치한다. 쌀 기반 발효 환경은 전분과 맥아당이 풍부한 반면, 자유 아미노산 공급은 제한적인 특성을 지닌다.
+
+이러한 환경에서 **his-operon과 같은 에너지 소모적 아미노산 생합성 경로의 소실**과 **malK (maltose transporter)의 강화**는, 환경 자원에 맞춘 **genome streamlining 기반 niche adaptation**을 명확히 보여준다.  
+이는 *Lactobacillus fermentum*이 다양한 발효 식품에서 우점종으로 존재할 수 있는 대사적 유연성을 뒷받침한다.
+
+---
+
+### 5.2 분석의 신뢰도와 한계
+
+본 연구는 공개된 **Complete genome 84개 중 80개(약 95%)**를 분석에 포함하여 계통 및 기능 분석의 통계적 신뢰도를 확보하였다.
+
+다만 CP033371.1은 ANI 분석에서는 정상 범주에 속했으나, accessory genome 기반 계통수에서는 **비정상적으로 긴 branch**를 형성하였다.  
+전체 phylogroup 구조의 일관성을 유지하기 위해 해당 균주는 분석에서 제외하였으며, 이는 해당 균주의 독특한 진화적 특성이나 주석 오류를 심층적으로 해석하지 못한 한계로 남는다.
+
+---
+
+### 5.3 산업적 함의: 정밀 발효로의 확장
+
+본 연구의 분석 프레임워크는 기초 유전체 분석을 넘어 **산업 현장에 적용 가능한 정밀 발효 전략**으로 확장될 수 있다.
+
+- 원료 특성에 맞춘 **데이터 기반 스타터 균주 선별**
+- **C/G/E functional profile**을 활용한 발효 품질 예측
+
+이러한 접근은 경험 중심의 스타터 개발을 넘어, **유전체 정보에 기반한 예측형 발효 시스템(precision fermentation)**으로 응용할 수 있을 것 같다.
