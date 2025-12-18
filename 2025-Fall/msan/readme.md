@@ -67,7 +67,7 @@ https://github.com/igchoi/IBT610-CompGen/blob/main/2025-Fall/msan/result/fastani
 `lp_final.py` 파이프라인을 통해 Pangenome 데이터와 기능 분석을 통합하고 시각화했습니다.
 
 #### A. Pangenome Expansion (Heaps' Law)
-유전체 수가 늘어날수록 신규 유전자가 계속 발견되는 **Open Pangenome** ($\lambda = 0.366$) 특성을 확인했습니다.
+유전체 수가 늘어날수록 신규 유전자가 계속 발견되는 **Open Pangenome** ($\lambda = 0.378$) 특성을 확인했습니다.
 ![[Heaps Law](2025-Fall/msan/result/02_heaps_law.png)](https://github.com/igchoi/IBT610-CompGen/blob/main/2025-Fall/msan/result/02_heaps_law.png)
 
 #### B. Phylogenetic Clustering (Mash)
