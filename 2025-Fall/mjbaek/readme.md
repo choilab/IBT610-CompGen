@@ -27,9 +27,9 @@ L. fermentum phylogroup이 단순한 유전체 유사도가 아니라 발효 기
 
 ## 2.1 Genome Sequencing Data Acquisition
 
-NCBI RefSeq 데이터베이스에서 *Lactobacillus fermentum*으로 분류된 모든 유전체(총 **155개**)를 FASTA 형식으로 다운로드 하였다. Genome assembly level이 “Complete Genome”인 시퀀스만 1차 선별하였으며, 이후 fastANI를 이용해 균주 간 쌍별 ANI를 계산하였다.
+NCBI RefSeq 데이터베이스에서 *Lactobacillus fermentum*으로 분류된 모든 유전체(총 **155개**)를 FASTA 형식으로 다운로드 하여, fastANI를 이용해 균주 간 쌍별 ANI를 계산하였다.
 
-Figure 2.와 같이 ANI 95% 미만 값을 보이는 종 내 이질적 균주 (예: AP017974.1 등)와 중복 유전체를 제거하고, complete한 genome 수준의 유전체만을 남겨 최종 **81개 균주**를 downstream 분석에 사용하였다.
+Figure 2.와 같이 ANI 95% 미만 값을 보이는 종 내 이질적 균주 (예: AP017974.1 등)와 중복 유전체를 제거하고, complete한 genome 수준의 유전체만을 남겨 최종 **81개 균주**로 분석을 시작했다다.
 
 <img width="3200" height="2800" alt="ani_heatmap" src="https://github.com/user-attachments/assets/12dec12e-fa07-4ee5-b7c0-6763e4dad9fe" />
 
@@ -57,12 +57,12 @@ Accessory genome 기반 계통수에서 비정상적으로 긴 branch를 형성�
 
 **Workflow**  
 - **Input**:  
-  - [Final 81 genome FASTA]
+  - 81 genome FASTA files
 - **Tool**:  
   - [Prokka v1.14.6](https://github.com/tseemann/prokka)  
   - [Roary v3.13.0](https://github.com/sanger-pathogens/Roary)
 - **Output**:  
-  - [Prokka GFF / FAA]
+  - 81 genome prokka gff files
   - [gene_presence_absence.csv](https://github.com/minjBaek02/file_collection/blob/90180ecefe398d81ddba80568d430fc4c187ce96/%EA%B9%83%ED%97%88%EB%B8%8C%20%EC%97%85%EB%A1%9C%EB%93%9C%20%ED%8C%8C%EC%9D%BC/Galaxy1052-%5BRoary%20on%20data%201033%2C%20data%201021%2C%20and%20others%20Gene%20Presence%20Absence%5D.csv)  
   - [accessory_matrix_80strains.tsv](https://github.com/minjBaek02/file_collection/blob/d6fbe99682eeba875db3a349534f11ef114b4562/%EA%B9%83%ED%97%88%EB%B8%8C%20%EC%97%85%EB%A1%9C%EB%93%9C%20%ED%8C%8C%EC%9D%BC/accessory_presence_absence_renamed.tsv)
 
@@ -72,18 +72,17 @@ Accessory genome 기반 계통수에서 비정상적으로 긴 branch를 형성�
 
 Accessory genome 기반 phylogroup 정의를 위해 Roary에서 생성된 accessory gene 계통수 (`accessory_tree.nwk`)를 사용하였다.
 
-계통수 기반 거리 정보를 이용해 계층적 군집화를 수행하고, **cut height = 0.35** 기준으로 phylogroup을 정의하였다.  
-최종 phylogroup 정보는 [`phylogroup_h35.tsv`](https://github.com/minjBaek02/file_collection/blob/90180ecefe398d81ddba80568d430fc4c187ce96/%EA%B9%83%ED%97%88%EB%B8%8C%20%EC%97%85%EB%A1%9C%EB%93%9C%20%ED%8C%8C%EC%9D%BC/phylogroup_h35.tsv)로 정리하였다.
+계통수 기반 거리 정보를 이용해 계층적 군집화를 수행하고, dynamicTreeCut이라는 알고리즘을 이용해 **cut height = 0.35** 기준으로 phylogroup을 정의하였다.  
 
 **Workflow**  
 - **Input**:  
   - [accessory_tree.nwk](https://github.com/minjBaek02/file_collection/blob/90180ecefe398d81ddba80568d430fc4c187ce96/%EA%B9%83%ED%97%88%EB%B8%8C%20%EC%97%85%EB%A1%9C%EB%93%9C%20%ED%8C%8C%EC%9D%BC/Accessory%20Binary%20Genes%20.Newick.nhx)
 - **Tool**:
-  - [iTOL (Interactive Tree Of Life)](https://itol.embl.de/)
+  - [dynamicTreeCut (cutreeHybrid)](https://cran.r-project.org/web/packages/dynamicTreeCut/index.html)
 - **Output**:  
   - [phylogroup_h35.tsv](https://github.com/minjBaek02/file_collection/blob/90180ecefe398d81ddba80568d430fc4c187ce96/%EA%B9%83%ED%97%88%EB%B8%8C%20%EC%97%85%EB%A1%9C%EB%93%9C%20%ED%8C%8C%EC%9D%BC/phylogroup_h35.tsv) 
 
-Accessory genome 기반 phylogrouping을 수행하기 전에, CP033371.1이 트리에서 지나치게 긴 단독 branch를 형성하는 extreme outlier임을 확인하였다. (ANI 분석에서는 이상 없음, Roary 단계에서 gene clustering 혹은 annotation mismatch 가능성)
+Accessory genome 기반 phylogrouping을 수행하기 전에, CP033371.1이 지나치게 긴 단독 branch를 형성하는 extreme outlier임을 확인하였다. (ANI 분석에서는 이상 없음, Roary 단계에서 gene clustering 혹은 annotation mismatch 가능성)
 
 이로 인해 거리 기반 분석(H35 분할 포함)을 왜곡할 정도의 비정상적 값 생성하기에 downstream 분석의 정확성을 위해
 CP033371.1을 제외하고 총 80 strain 기준으로 H35 phylogrouping 및 후속 C/G/E 분석을 수행하였다.
@@ -152,11 +151,11 @@ Accessory 유전자의 존재/부재 패턴을 기반으로 구축한 accessory 
 
 #### 🔎 Key Observations
 
-1. **CP076082.1은 GROUP1에 속하지만, 내부에서도 가장 외곽(branch tip)에 위치하는 outlier strain으로 확인됨**  
-   → accessory genome 조성에서 GROUP1 평균 패턴과의 이탈 가능성 시사  
+1. Tree 상의 서로 다른 구역에서 **C/G/E functional profile이 일관되게 다른 패턴**을 보임  
+   → phylogroup 분리가 단순한 계통학적 거리뿐 아니라 **기능적 조성 차이와 연관**되어 있을 가능성 제기 
 
-2. Tree 상의 서로 다른 구역에서 **C/G/E functional profile이 일관되게 다른 패턴**을 보임  
-   → phylogroup 분리가 단순한 계통학적 거리뿐 아니라 **기능적 조성 차이와 연관**되어 있을 가능성 제기  
+2. **CP076082.1은 GROUP1에 속하지만, 내부에서도 가장 외곽(branch tip)에 위치하는 outlier strain으로 확인됨**  
+   → accessory genome 조성에서 GROUP1 평균 패턴과의 이탈 가능성 시사   
 
 이러한 관찰이 단순한 계통 구조상의 효과인지, 혹은 실제로 **phylogroup 간 기능 조성 차이가 통계적으로 유의한지**를 검증하기 위해  후속 기능 비교 및 통계 분석을 수행하였다.
 
