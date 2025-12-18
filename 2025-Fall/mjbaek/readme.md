@@ -48,7 +48,7 @@ Figure 2.와 같이 ANI 95% 미만 값을 보이는 종 내 이질적 균주 (�
 
 각 균주의 주석 형식을 통일하기 위해 Prokka (v1.14.6)를 사용하여 각 균주별 GFF 파일과 단백질 서열(FAA)을 생성하였다.
 
-생성된 Prokka GFF 전체를 Roary (v3.13.0)에 입력하여 pan-genome을 구축하였으며, gene_presence_absence.* 및 gene_presence_absence.Rtab 파일을 통해 core 및 accessory 유전자 집합을 정의하였다.  
+생성된 Prokka GFF 전체를 Roary (v3.13.0)에 입력하여 pan-genome을 구축하였으며, 'gene_presence_absence.csv' 로로 core 및 accessory 유전자 집합을 정의하였다.  
 전체 균주의 **95% 이상에서 발견되는 유전자**를 core genome으로, 그 외(shell + cloud)를 accessory genome으로 정의하였다.
 
 Accessory genome 기반 계통수에서 비정상적으로 긴 branch를 형성한 **CP033371.1**을 추가로 제거하였고,  
