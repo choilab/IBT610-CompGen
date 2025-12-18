@@ -6,6 +6,11 @@
 ## 📖 Project Overview
 본 프로젝트는 NCBI 데이터베이스에 등록된 방대한 *L. plantarum* 유전체 데이터를 정제하여 **대표 유전체(Representative Genomes)**를 선별하고, 이들의 **Pangenome(범유전체)** 구조와 숙주 상호작용에 핵심적인 **Surfaceome(표면 단백질체)**을 규명하는 것을 목표로 합니다.
 
+<p align="center">
+  <img src="https://raw.githubusercontent.com/igchoi/IBT610-CompGen/main/2025-Fall/msan/result/image.png">
+</p>
+Ref. MJ, Gemini Nano Banana
+
 ## 📅 Project Log & Timeline (Daily Progress)
 
 ### 1. Data Acquisition & Initial Statistics (2025.10.16)
@@ -67,7 +72,7 @@ https://github.com/igchoi/IBT610-CompGen/blob/main/2025-Fall/msan/result/fastani
 `lp_final.py` 파이프라인을 통해 Pangenome 데이터와 기능 분석을 통합하고 시각화했습니다.
 
 #### A. Pangenome Expansion (Heaps' Law)
-유전체 수가 늘어날수록 신규 유전자가 계속 발견되는 **Open Pangenome** ($\lambda = 0.366$) 특성을 확인했습니다.
+유전체 수가 늘어날수록 신규 유전자가 계속 발견되는 **Open Pangenome** ($\lambda = 0.378$) 특성을 확인했습니다.
 ![[Heaps Law](2025-Fall/msan/result/02_heaps_law.png)](https://github.com/igchoi/IBT610-CompGen/blob/main/2025-Fall/msan/result/02_heaps_law.png)
 
 #### B. Phylogenetic Clustering (Mash)
@@ -159,11 +164,47 @@ cat << 'EOF' > ~/quality_control_analysis_kr.md
 ![Type Distribution Bar](https://raw.githubusercontent.com/igchoi/IBT610-CompGen/main/2025-Fall/msan/result/02_Type_Distribution_Bar.png)
 ![Signal Peptide Presence](https://raw.githubusercontent.com/igchoi/IBT610-CompGen/main/2025-Fall/msan/result/03_Signal_Peptide_Presence.png)
 
-## Next plan
-- Core/Accessory/Rare 기능 분석 
-- Clade별 Secretome/Surfaceome 패턴
+### 5. Surfaceome (2025.12.17)
 
-## 💻 Reproducibility (How to Run)
+## 📋 1. 분석 개요 (Overview)
+이번 주 **SignalP 6.0**과 **DeepTMHMM**을 결합한 전략을 통해, 214개 균주의 전체 단백질 중 표면 단백질(Surfaceome) 후보군 **32,653개**를 최종 선별하고 구조적 특성에 따라 분류했습니다.
+
+*   **Total Surfaceome Candidates:** 32,653 proteins
+*   **Method:** Hybrid Classification (SignalP + DeepTMHMM)
+*   **Goal:** 정확한 막 구조 예측을 통한 카테고리화
+
+---
+
+## 📊 2. 분석 결과 시각화 (Key Visualization)
+
+분석 결과, Surfaceome은 **Complex Topology(복잡한 구조)**와 **Lipoprotein(지질단백질)**이 전체의 약 89%를 차지하는 것으로 나타났습니다.
+
+![Integrated Surfaceome Analysis](https://github.com/igchoi/IBT610-CompGen/blob/main/2025-Fall/msan/result/%20Surfaceome_Final.png?raw=true)
+
+---
+
+## 🔬 3. 상세 분류 결과 (Detailed Statistics)
+
+이미지 데이터를 바탕으로 집계된 최종 수치입니다. **Complex Topology** 그룹이 가장 큰 비중을 차지하며, 이는 다수의 TM Helix를 포함하거나 복합적인 신호를 가진 단백질군으로 해석됩니다.
+
+| 순위 | 카테고리 (Category) | 단백질 수 (Count) | 비율 (Percentage) | 특징 및 해석 |
+|:---:|:---|:---:|:---:|:---|
+| **1** | **Complex Topology** | **17,040** | **52.2%** | 가장 큰 비중을 차지. 복잡한 막 관통 구조를 가지거나 다양한 위상(Topology)이 혼재된 그룹 |
+| **2** | **Lipoprotein** | **11,918** | **36.5%** | SignalP가 LIPO로 예측한 그룹. 세포막 표면에 지질 앵커로 부착됨 (주요 백신 타겟) |
+| **3** | **Multi-pass Membrane** | **2,842** | **8.7%** | 명확하게 여러 번 막을 관통하는 구조 (TM Helix 다수 보유) |
+| **4** | **Other Surface Protein** | **853** | **2.6%** | 기타 표면 단백질로 분류된 소수 그룹 |
+| **Total** | **Surfaceome** | **32,653** | **100%** | (분석된 214개 균주 합계) |
+
+---
+
+## 📂 4. 데이터셋 다운로드 (Data Assets)
+
+분석에 사용된 Raw Data 및 교차 분석 테이블입니다.
+
+*   📄 **Summary Crosstab (SignalP vs Category):** [signalp_vs_category_crosstab.csv](https://github.com/igchoi/IBT610-CompGen/blob/main/2025-Fall/msan/result/signalp_vs_category_crosstab.csv)
+*   📄 **Full Classification List:** [surfaceome_hybrid_classified.csv](https://github.com/igchoi/IBT610-CompGen/blob/main/2025-Fall/msan/result/surfaceome_hybrid_classified.csv)
+
+---
 
 ### 1. Directory Setup
 스크립트 내 경로(`BASE_DIR`)를 사용자의 환경에 맞게 수정해야 합니다.
